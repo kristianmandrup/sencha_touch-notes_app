@@ -1,11 +1,15 @@
 Ext.application({
-    name: "NotesApp",
+    name: "FriendlyRent",
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox', 'FriendlyRent.view.Navigation'
     ],
 
-    views: ["NotesListContainer"],
+    // models: ["Note"],
+    // stores: ["Notes"],
+    // controllers: ["Notes"],
+    views: ["Main", "BottomBar", "TopBar", "Map", "Navigation"],
+    // "NotesList", "NoteEditor", "Navigation",
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -36,17 +40,31 @@ Ext.application({
 
     mainLaunch: function() {
         console.log('mainLaunch');
-        if (!device || !this.launched) { return; }
+        // if (!device || !this.launched) { return; }
 
         console.log('Launched!');
 
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         
-        // Initialize the main view
-        var notesListContainer = Ext.create("NotesApp.view.NotesListContainer");
-        Ext.Viewport.add(notesListContainer);
-        
+        // // Initialize the main view
+        // var notesListView = {
+        //     xtype: "noteslistview"
+        // };
+        // var noteEditorView = {
+        //     xtype: "noteeditorview"
+        // };
+
+        var navigation = Ext.create('FriendlyRent.view.Navigation');
+
+        // Ext.Viewport.add([notesListView, noteEditorView]);
+
+        Ext.Viewport.add(navigation);
+
+        navigation.push({
+            xtype: 'main'
+        });
+
         // Ext.Viewport.add(Ext.create('FriendlyRent.view.Main'));        
     },
 

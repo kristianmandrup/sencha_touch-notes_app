@@ -1,0 +1,13 @@
+require 'guard/guard'
+
+guard 'coffeescript' do
+  watch %r{^app/.+\.coffee$}
+  watch %r{^app.coffee$}
+end
+
+config = File.expand_path "../resources/sass/config.rb", __FILE__
+path = File.expand_path "../..", config
+
+guard 'compass', :project_path => path,  :configuration_file => config do
+  watch %r{resources/.+\.scss}
+end
