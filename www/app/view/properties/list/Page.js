@@ -12,7 +12,7 @@ Ext.define('FriendlyRent.view.properties.list.Page', {
         xtype 'properties.list.content'  
     },
     {
-        xtype 'properties.list.navbar'
+        xtype 'properties.navbar'
     }
   }
 });

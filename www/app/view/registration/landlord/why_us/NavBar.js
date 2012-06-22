@@ -1,6 +1,6 @@
 Ext.define("FriendlyRent.view.registration.landlord.why_us.NavBar", {
   extend: 'Ext.tab.Panel',
-  alias: "registration.landlord.why_us.NavBar",
+  alias: "registration.landlord.why_us.navbar",
   config: {
     tabBarPosition: 'bottom',
     defaults: {

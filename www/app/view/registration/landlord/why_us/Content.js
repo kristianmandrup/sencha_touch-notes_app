@@ -5,10 +5,10 @@ Ext.define('FriendlyRent.view.registration.landlord.why_us.Content', {
     layout: 'vbar',
     items: [
         {
-            html: 'Why is'
+            html: 'Why us!?'
         },
         {
-            html: 'Video here!'
+            html: 'Landlord Video here!'
         }
     ]
   }

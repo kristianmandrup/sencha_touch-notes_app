@@ -6,12 +6,10 @@ Ext.define('FriendlyRent.view.properties.list.Item', {
     items: [{
       [
         {
-            xtype: 'properties.list.item.image',
-            flex: 1,
+            xtype: 'properties.list.item.image'
         },
         {
-            xtype: 'properties.list.item.content',
-            flex: 1,
+            xtype: 'properties.list.item.content'
         }
       ]
     }]

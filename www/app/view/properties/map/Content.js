@@ -5,7 +5,7 @@ Ext.define('FriendlyRent.view.properties.map.Content', {
   config: {
     items: [{
       xtype: 'map',
-      useCurrentLocation: false
+      useCurrentLocation: true
     }]
   }
 });

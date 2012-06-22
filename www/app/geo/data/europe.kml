@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>europe.kml</name>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon60.png">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon60.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon52.png">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon60.png</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon52.png</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-diamond0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_red-diamond7">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond9">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-diamond2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon52.png">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.21</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond70">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-diamond4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond60">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_red-diamond6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-diamond11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_red-diamond9">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond7">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-diamond50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-diamond3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_red-diamond10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_red-diamond2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-diamond8">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_red-diamond00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-diamond0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-diamond10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-diamond3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-diamond</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Amsterdam, The Netherlands</name>
+		<address>Amsterdam, The Netherlands</address>
+		<LookAt>
+			<longitude>4.890935</longitude>
+			<latitude>52.373801</latitude>
+			<altitude>0</altitude>
+			<range>22301.205078</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond9</styleUrl>
+		<Point>
+			<coordinates>4.890935,52.373801,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Paris, France</name>
+		<address>Paris, France</address>
+		<LookAt>
+			<longitude>2.350987</longitude>
+			<latitude>48.856667</latitude>
+			<altitude>0</altitude>
+			<range>14179.897461</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond6</styleUrl>
+		<Point>
+			<coordinates>2.350987,48.856667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Luxembourg, Luxembourg</name>
+		<address>Luxembourg, Luxembourg</address>
+		<LookAt>
+			<longitude>6.129596</longitude>
+			<latitude>49.610004</latitude>
+			<altitude>0</altitude>
+			<range>10174.439453</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond1</styleUrl>
+		<Point>
+			<coordinates>6.129595999999999,49.610004,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Brussels, Belgium</name>
+		<address>Brussels, Belgium</address>
+		<LookAt>
+			<longitude>4.367612</longitude>
+			<latitude>50.837051</latitude>
+			<altitude>0</altitude>
+			<range>13165.382812</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond11</styleUrl>
+		<Point>
+			<coordinates>4.367612,50.837051,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Zurich, Switzerland</name>
+		<address>Zurich, Switzerland</address>
+		<LookAt>
+			<longitude>8.538033</longitude>
+			<latitude>47.369024</latitude>
+			<altitude>0</altitude>
+			<range>13362.969727</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond50</styleUrl>
+		<Point>
+			<coordinates>8.538033,47.369024,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Berne, Switzerland</name>
+		<address>Berne, Switzerland</address>
+		<LookAt>
+			<longitude>7.448148</longitude>
+			<latitude>46.947999</latitude>
+			<altitude>0</altitude>
+			<range>16874.712891</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond0</styleUrl>
+		<Point>
+			<coordinates>7.448148000000001,46.947999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Berlin, Germany</name>
+		<address>Berlin, Germany</address>
+		<LookAt>
+			<longitude>13.4114</longitude>
+			<latitude>52.523405</latitude>
+			<altitude>0</altitude>
+			<range>42096.898438</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond</styleUrl>
+		<Point>
+			<coordinates>13.4114,52.523405,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Prague, Czech Republic</name>
+		<address>Prague, Czech Republic</address>
+		<LookAt>
+			<longitude>14.42046</longitude>
+			<latitude>50.087811</latitude>
+			<altitude>0</altitude>
+			<range>34956.960938</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond7</styleUrl>
+		<Point>
+			<coordinates>14.42046,50.087811,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Vienna, Austria</name>
+		<address>Vienna, Austria</address>
+		<LookAt>
+			<longitude>16.372778</longitude>
+			<latitude>48.209206</latitude>
+			<altitude>0</altitude>
+			<range>26463.113281</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond4</styleUrl>
+		<Point>
+			<coordinates>16.372778,48.20920599999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Salzburg, Austria</name>
+		<address>Salzburg, Austria</address>
+		<LookAt>
+			<longitude>13.04441</longitude>
+			<latitude>47.800499</latitude>
+			<altitude>0</altitude>
+			<range>11544.925781</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon60.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon52.png</styleUrl>
+		<Point>
+			<coordinates>13.04441,47.800499,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Munich, Germany</name>
+		<address>Munich, Germany</address>
+		<LookAt>
+			<longitude>11.580186</longitude>
+			<latitude>48.139126</latitude>
+			<altitude>0</altitude>
+			<range>27245.988281</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#msn_red-diamond5</styleUrl>
+		<Point>
+			<coordinates>11.580186,48.139126,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
