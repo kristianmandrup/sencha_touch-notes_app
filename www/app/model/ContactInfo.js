@@ -1,4 +1,4 @@
-Ext.define('FriendlyRent.model.ContactInfo', {
+Ext.define('model.ContactInfo', {
     extend: 'Ext.data.Model',
     
     config: {
@@ -8,9 +8,10 @@ Ext.define('FriendlyRent.model.ContactInfo', {
         fields: [
             {name: 'id', type: 'int'},
             {name: 'dateCreated',       type: 'date', dateFormat: 'c' },
-            {name: 'contact_hours',     type: 'auto'},
-            {name: 'phone',             type: 'auto'},
-            {name: 'alt_phone',         type: 'auto'}
+
+            {name: 'contact_hours',     type: 'string'},
+            {name: 'phone',             type: 'string'},
+            {name: 'alt_phone',         type: 'string'}
         ],
         validations: [
             { type: 'presence', field: 'id' },

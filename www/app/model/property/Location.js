@@ -1,9 +1,7 @@
-Ext.define('FriendlyRent.model.property.Location', {
+Ext.define('property.Location', {
     extend: 'Ext.data.Model',
     
     config: {
-        identifier: 'location',
-
         idProperty: 'id',
         fields: [
             {name: 'id', type: 'int'},
@@ -14,6 +12,7 @@ Ext.define('FriendlyRent.model.property.Location', {
         validations: [
             { type: 'presence', field: 'id' },
             { type: 'presence', field: 'dateCreated' },
+
             { type: 'presence', field: 'lat' },
             { type: 'presence', field: 'long' }
         ]

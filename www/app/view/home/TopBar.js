@@ -12,7 +12,7 @@ Ext.define("FriendlyRent.view.home.TopBar", {
       },
       items: [
           {
-              xtype: 'logo'
+              xtype: 'logo.image'
           },
           {
               xtype: 'loginBtn'         

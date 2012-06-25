@@ -18,7 +18,26 @@
 
 // Your custom code goes here...
 
-@include pictos-iconmask('wifi');
+// custom extended slider
+
+.x-slider-field-input, .x-slider-field-text {
+  .x-component-outer {
+    padding: 0.5em;
+  }
+  .x-slider-helper {
+    width: 30%;
+  }
+  .x-slider-helper .x-slider-helper-input {
+    width: 100%;
+    margin: 0;
+    padding: 0.1em 0.3em;
+    height: 2.2em;
+    border: 1px solid #CCC;
+  }
+}
+
+// pictos icons
+
 @include pictos-iconmask('add_black');
 @include pictos-iconmask('address_book');
 @include pictos-iconmask('at'); // email
@@ -71,9 +90,6 @@
 @include pictos-iconmask('sync');
 @include pictos-iconmask('twitter2');
 @include pictos-iconmask('user_add');
+@include pictos-iconmask('user_fave');
 @include pictos-iconmask('video');
-
-
-
-
-@include pictos-iconmask('wifi');
+// @include pictos-iconmask('wifi');

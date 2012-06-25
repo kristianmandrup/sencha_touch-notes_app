@@ -1,16 +1,12 @@
-Ext.define('FriendlyRent.model.property.RentalPeriod', {
+Ext.define('property.RentalPeriod', {
     extend: 'Ext.data.Model',
     
     config: {
-        identifier: 'rental_period',
-
         idProperty: 'id',
         fields: [
             {name: 'id', type: 'int'},
             {name: 'dateCreated',       type: 'date', dateFormat: 'c' },
-
-            {name: 'rental_costs',      type: 'rental_costs'}
-
+        
             {name: 'duration',          type: 'int'}, // seconds
             {name: 'start_date',        type: 'date', dateFormat: 'c' },
             {name: 'end_date'           type: 'date', dateFormat: 'c' },
@@ -18,6 +14,8 @@ Ext.define('FriendlyRent.model.property.RentalPeriod', {
 
             {name: 'publish_at',        type: 'date', dateFormat: 'c' }
         ],
+        hasOne: {name: 'rental_costs',  model: 'property.rental_period.costs'}
+
         validations: [
             { type: 'presence', field: 'id' },
             { type: 'presence', field: 'dateCreated' },

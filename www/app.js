@@ -2,7 +2,7 @@ Ext.application({
     name: "FriendlyRent",
 
     requires: [
-        'Ext.MessageBox', 'FriendlyRent.view.Navigation'
+        'FriendlyRent.view.Navigation'
     ],
 
     // models: ["Note"],
@@ -41,6 +41,9 @@ Ext.application({
     mainLaunch: function() {
         console.log('mainLaunch');
         // if (!device || !this.launched) { return; }
+
+        I18n.defaultLocale = "da";
+        I18n.locale = "da";
 
         console.log('Launched!');
 

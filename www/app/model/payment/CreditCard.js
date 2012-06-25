@@ -1,9 +1,7 @@
-Ext.define('FriendlyRent.model.payment.CreditCard', {
+Ext.define('payment.CreditCard', {
     extend: 'Ext.data.Model',
     
     config: {
-        identifier: 'credit_card',
-
         idProperty: 'id',
         fields: [
             {name: 'id',            type: 'int'},

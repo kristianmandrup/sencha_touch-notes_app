@@ -8,10 +8,10 @@ Ext.define('FriendlyRent.view.registration.landlord.register.Content', {
             html: 'Register Landlord'
         },
         {
-            html: 'Facebook'
+            xtype: 'registration.login.facebook'
         },
         {
-            html: 'Twitter'
+            xtype: 'registration.login.twitter'
         }
     ]
   }

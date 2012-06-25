@@ -4,6 +4,9 @@ require "sinatra/reloader" if development?
 # Make sure our assets reload on every request.
 set :static_cache_control, [:public, :max_age => 0]
 
+# set :bind, 'localhost'
+set :port, 4567
+
 # Pick which set of files get served depending
 # on our environment
 case ENV["RACK_ENV"] || "development"

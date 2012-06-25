@@ -1,4 +1,4 @@
-Ext.define('FriendlyRent.model.Property', {
+Ext.define('model.Property', {
     extend: 'Ext.data.Model',
     
     config: {

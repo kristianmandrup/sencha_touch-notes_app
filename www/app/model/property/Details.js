@@ -1,9 +1,7 @@
-Ext.define('FriendlyRent.model.property.Details', {
+Ext.define('property.Details', {
     extend: 'Ext.data.Model',
     
     config: {
-        identifier: 'property_details',
-
         idProperty: 'id',
         fields: [
             {name: 'id', type: 'int'},

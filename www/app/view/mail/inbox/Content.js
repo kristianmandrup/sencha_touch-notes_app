@@ -5,7 +5,7 @@ Ext.define('FriendlyRent.view.mail.inbox.Content', {
     layout: 'vbar',
     items: [
         {
-            html: 'Inbox'
+            html: I18n.t('mail.inbox')
         },
         {
             html: 'received mail'

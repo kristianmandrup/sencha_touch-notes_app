@@ -1,4 +1,4 @@
-Ext.define('FriendlyRent.model.account.Tenant', {
+Ext.define('account.Tenant', {
     extend: 'Ext.data.Model',
     
     config: {
@@ -10,6 +10,7 @@ Ext.define('FriendlyRent.model.account.Tenant', {
             {name: 'dateCreated',                type: 'date', dateFormat: 'c' },
             {name: 'contact_requests_made',      type: 'int'}
         ],
+        belongsTo: 'User',
         validations: [
             { type: 'presence', field: 'id' },
             { type: 'presence', field: 'dateCreated' }

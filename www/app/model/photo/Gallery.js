@@ -1,9 +1,7 @@
-Ext.define('FriendlyRent.model.photo.Gallery', {
+Ext.define('photo.Gallery', {
     extend: 'Ext.data.Model',
     
     config: {
-        identifier: 'photo_gallery',
-
         idProperty: 'id',
         fields: [
             {name: 'id', type: 'int'},
