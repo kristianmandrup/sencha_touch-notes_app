@@ -1,11 +1,14 @@
+
 Ext.define('FriendlyRent.view.properties.map.Content', {
   extend: 'Ext.Map',
-  alias: 'widget.properties.map.content',
-  layout: 'fit',
+  alias: 'widget.properties_map_content',
   config: {
-    items: [{
-      xtype: 'map',
-      useCurrentLocation: true
-    }]
+    layout: 'fit',
+    items: [
+      {
+        xtype: 'map',
+        useCurrentLocation: true
+      }
+    ]
   }
 });

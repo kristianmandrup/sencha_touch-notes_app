@@ -48,6 +48,7 @@ Ext.define('Ext.Panel', {
     config: {
         baseCls: Ext.baseCSSPrefix + 'panel',
 
+        navBarItems: null,
         /**
          * @cfg {Number/Boolean/String} bodyPadding
          * A shortcut for setting a padding style on the body element. The value can either be

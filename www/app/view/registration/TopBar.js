@@ -1,19 +1,16 @@
-Ext.define("FriendlyRent.view.registration.landlord.TopBar", {
-  extend: 'Ext.Panel',
-  alias: "widget.registration.landlord.topbar",
+
+Ext.define('FriendlyRent.view.registration.tenant.TopBar', {
+  extend: 'FriendlyRent.TopBar',
+  alias: 'widget.reg_tenant_topbar',
+  requires: ['Ext.Img'],
   config: {
-    tabBarPosition: 'top',
-    defaults: {
-      html: 'text',
-      styleHtmlContent: true
-    },
-    layout: {
-      pack: 'center',
-    },
     items: [
-        {
-            xtype: 'logo.backBtn'
-        }
-    ]    
+      {
+        xtype: 'image',
+        width: 48,
+        height: 48,
+        src: 'resources/images/friendly_rent_trans_48.png'
+      }
+    ]
   }
 });

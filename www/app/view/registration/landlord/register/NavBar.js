@@ -1,25 +1,16 @@
-Ext.define("FriendlyRent.view.registration.landlord.register.NavBar", {
-  extend: 'Ext.tab.Panel',
-  alias: "registration.landlord.register.navbar",
+
+Ext.define('FriendlyRent.view.registration.landlord.register.NavBar', {
+  extend: 'FriendlyRent.NavBar',
+  alias: 'registration.landlord_register_navbar',
   config: {
-    tabBarPosition: 'bottom',
-    defaults: {
-      html: 'text',
-      styleHtmlContent: true
-    },
-    layout: {
-      pack: 'center',
-    },
     items: [
-        {
-            xtype: 'newMenuBtn'
-        },
-        {
-            xtype: 'whyUsBtn'
-        },
-        {
-            xtype: 'registerBtn'
-        }
+      {
+        text: I18n.t('new')
+      }, {
+        text: I18n.t('why_us')
+      }, {
+        text: I18n.t('register')
+      }
     ]
   }
 });

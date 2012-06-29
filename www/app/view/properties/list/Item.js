@@ -1,17 +1,15 @@
+
 Ext.define('FriendlyRent.view.properties.list.Item', {
   extend: 'Ext.Panel',
-  alias: 'widget.properties.list.item',
+  alias: 'widget.properties_list_item',
   config: {
-    layout: 'hbox',    
-    items: [{
-      [
-        {
-            xtype: 'properties.list.item.image'
-        },
-        {
-            xtype: 'properties.list.item.content'
-        }
-      ]
-    }]
+    layout: 'hbox',
+    items: [
+      {
+        xtype: 'properties_list_item_image'
+      }, {
+        xtype: 'properties_list_item_content'
+      }
+    ]
   }
 });

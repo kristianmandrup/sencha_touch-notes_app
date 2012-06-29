@@ -1,18 +1,17 @@
+
 Ext.define('FriendlyRent.view.properties.list.Page', {
   extend: 'Ext.Panel',
-  alias:  'widget.properties.list.Page',
+  alias: 'widget.properties.list.Page',
   config: {
     layout: 'vbox'
   },
   items: [
     {
-        xtype 'search.topbar'
-    },
-    {
-        xtype 'search.content'  
-    },
-    {
-        xtype 'search.navbar'
+      xtype: 'search_topbar'
+    }, {
+      xtype: 'search_content'
+    }, {
+      xtype: 'search_navbar'
     }
-  }
+  ]
 });

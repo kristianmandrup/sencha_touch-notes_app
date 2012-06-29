@@ -1,22 +1,14 @@
-Ext.define("FriendlyRent.view.search.TopBar", {
-  extend: 'Ext.Panel',
-  alias: "widget.search.topbar",
+
+Ext.define('FriendlyRent.view.search.TopBar', {
+  extend: 'FriendlyRent.NavBar',
+  alias: 'widget.search_topbar',
   config: {
-    tabBarPosition: 'top',
-    defaults: {
-      html: 'text',
-      styleHtmlContent: true
-    },
-    layout: {
-      pack: 'center',
-    },
     items: [
       {
-          xtype: 'listBtn'
-      },
-      {
-          xtype: 'mapBtn'         
+        text: I18n.t('list')
+      }, {
+        text: I18n.t('map')
       }
-    ]    
+    ]
   }
 });

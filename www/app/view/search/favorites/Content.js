@@ -1,10 +1,11 @@
+
 Ext.define('FriendlyRent.view.search.favorites.Content', {
   extend: 'Ext.dataview.List',
-  alias: 'widget.search.favorites.content',  
+  alias: 'widget.search_favorites_content',
   config: {
-    store: "Favorites",
-    itemId:"favoritesList",
-    loadingText: "Loading Favorites...",
+    store: 'Favorites',
+    itemId: 'favoritesList',
+    loadingText: 'Loading favorites...',
     emptyText: '<div class="favorites-list empty-text">No favorites found.</div>',
     onItemDisclosure: true,
     grouped: true,

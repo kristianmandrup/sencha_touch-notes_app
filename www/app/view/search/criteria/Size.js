@@ -1,11 +1,13 @@
-Ext.define("FriendlyRent.view.search.criteria.Rooms", {
-    extend: 'Ext.field.Slider',
-    alias: "widget.search.criteria.rooms",
-    config: { 
-      minValue: 10,      
-      maxValue: 300,
-      values: [60, 100], // double slider (2 thumbs)
+
+Ext.define('FriendlyRent.view.search.criteria.Size', {
+  extend: 'Ext.field.Slider',
+  alias: 'widget.search.criteria.size',
+  config: {
+    values: [60, 100]({
       increment: 10,
+      minValue: 10,
+      maxValue: 300,
       label: 'Size'
-    }
+    })
+  }
 });

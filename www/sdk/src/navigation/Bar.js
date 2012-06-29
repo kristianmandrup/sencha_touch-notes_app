@@ -191,16 +191,33 @@ Ext.define('Ext.navigation.Bar', {
         me.getItems();
 
         if (newView) {
+
+            // navBarItems = newView; //.config.navBarItems; //.navBarItems;
+            // navBarItems = me;
+
+            // console.log('iterating Docked items of new view', navBarItems);
+            // for (i = 0; i < navBarItems.length; i++) {
+            //     item = navBarItems[i];
+            //     console.log(item);
+            // }
+
             //update the back button stack with the current inner items of the view
             innerItems = newView.getInnerItems();
+
+            // console.log('innerItems', innerItems.length);
+
             for (i = 0; i < innerItems.length; i++) {
                 item = innerItems[i];
+
+                // console.log('inner item', item);
+
                 title = (item.getTitle) ? item.getTitle() : item.config.title;
 
                 me.backButtonStack.push(title || '&nbsp;');
             }
 
             me.setTitle(me.getTitleText());
+            // me.setTitle('Hello world');
 
             backButtonText = me.getBackButtonText();
             if (backButtonText) {
@@ -220,7 +237,14 @@ Ext.define('Ext.navigation.Bar', {
 
         me.endAnimation();
 
+        // console.log('add view', view);
+        // console.log('add item', item);
+
         title = (item.getTitle) ? item.getTitle() : item.config.title;
+
+        // navBarItems = item._navBarItems;
+        // navBarItemIds = item._navBarItemIds;
+        // viewNavBarItemIds = view._showNavBarItemIds;
 
         backButtonStack.push(title || '&nbsp;');
         hasPrevious = backButtonStack.length > 1;
@@ -237,6 +261,7 @@ Ext.define('Ext.navigation.Bar', {
             hasPrevious;
 
         me.endAnimation();
+
         backButtonStack.pop();
         hasPrevious = backButtonStack.length > 1;
 
@@ -259,8 +284,49 @@ Ext.define('Ext.navigation.Bar', {
             animated = animation && animation.isAnimation && view.isPainted(),
             properties, leftGhost, titleGhost, leftProps, titleProps;
 
+        // console.log('navBarItems', navBarItems);
+        // console.log('navBarItemIds', navBarItemIds);
+        // console.log('viewNavBarItemIds', viewNavBarItemIds);        
+
+        // if (navBarItemIds) {
+        //     navBarItemIds.forEach(function(navBarItemId) {
+        //         component = Ext.getCmp(navBarItemId);
+        //         console.log('component', component, 'for', navBarItemId);
+        //         if (component) {
+        //             console.log('hide', navBarItemId);
+        //             component.hide();
+        //             // me.remove(component, true);
+        //             // component.destroy();
+        //         }
+        //     });
+        // }
+
+        // if (viewNavBarItemIds) {
+        //     viewNavBarItemIds.forEach(function(navBarItemId) {
+        //         component = Ext.getCmp(navBarItemId);
+        //         console.log('show component', component, 'for', navBarItemId);
+        //         if (component) {
+        //             console.log('show again', navBarItemId);
+        //             component.show();
+        //             //component.destroy();
+        //         }
+        //     });
+        // }
+
+
+        // for (navBarItem in navBarItems) {
+        //     if (navBarItem.id) {
+        //         Ext.getCmp(navBarItem.id).destroy();
+        //         // Ext.getCmp(navBarItem.id).hide();
+        //     }
+        // }
+
+        // me.add(navBarItems);
+
         if (animated) {
             leftGhost = me.createProxy(leftBox.element);
+            rightGhost = me.createProxy(rightBox.element);
+
             leftBoxElement.setStyle('opacity', '0');
             backButton.setText(backButtonText);
             backButton[hasPrevious ? 'show' : 'hide']();
@@ -271,7 +337,8 @@ Ext.define('Ext.navigation.Bar', {
 
             me.refreshTitlePosition();
 
-            properties = me.measureView(leftGhost, titleGhost, reverse);
+            //properties = me.measureView(leftGhost, titleGhost, reverse);
+            properties = me.measureView(leftGhost, rightGhost, reverse);
             leftProps = properties.left;
             titleProps = properties.title;
 

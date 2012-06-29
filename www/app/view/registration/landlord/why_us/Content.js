@@ -1,15 +1,14 @@
+
 Ext.define('FriendlyRent.view.registration.landlord.why_us.Content', {
   extend: 'Ext.Panel',
-  alias: 'widget.registration.landlord.why_us.content',  
+  alias: 'widget.registration_landlord_why_us_content',
+  requires: ['Ext.Video'],
   config: {
-    layout: 'vbar',
+    layout: 'vbox',
     items: [
-        {
-            html: 'Why us!?'
-        },
-        {
-            html: 'Landlord Video here!'
-        }
+      {
+        html: '<img src="http://0.0.0.0:4567/resources/images/FriendlyRentTrans.png"/>'
+      }
     ]
   }
 });

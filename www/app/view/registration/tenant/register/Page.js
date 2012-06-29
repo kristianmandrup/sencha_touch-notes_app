@@ -1,18 +1,17 @@
+
 Ext.define('FriendlyRent.view.registration.landlord.why_us.Page', {
   extend: 'Ext.Panel',
-  alias:  'widget.registration.landlord.why_us.page',
+  alias: 'widget.reg_tenant_whyus_page',
   config: {
-    layout: 'vbox'
-  },
-  items: [
-    {
-        xtype 'registration.landlord.topbar'
-    },
-    {
-        xtype 'registration.landlord.register.content'  
-    },
-    {
-        xtype 'registration.landlord.register.navbar'
-    }
+    layout: 'vbox',
+    items: [
+      {
+        xtype: 'reg_tenant_topbar'
+      }, {
+        xtype: 'reg_tenant_content'
+      }, {
+        xtype: 'reg_tenant_navbar'
+      }
+    ]
   }
 });

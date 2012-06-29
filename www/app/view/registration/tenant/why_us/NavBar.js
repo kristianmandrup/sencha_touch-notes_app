@@ -1,18 +1,12 @@
-Ext.define("FriendlyRent.view.registration.tenant.why_us.NavBar", {
-  extend: 'Ext.tab.Panel',
-  alias: "registration.tenant.why_us.navbar",
+
+Ext.define('FriendlyRent.view.registration.tenant.why_us.NavBar', {
+  extend: 'FriendlyRent.NavBar',
+  alias: 'widget.tenant_why_us_navbar',
   config: {
-    tabBarPosition: 'bottom',
-    layout: {
-      pack: 'center',
-    },
     items: [
-        {
-            xtype: 'tenantMenuBtn'
-        },
-        {
-            xtype: 'whyUsBtn'
-        }
+      {
+        xtype: 'btn_whyus'
+      }
     ]
   }
 });

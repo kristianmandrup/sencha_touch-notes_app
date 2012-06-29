@@ -3,29 +3,36 @@ Ext.define("FriendlyRent.view.home.NavBar", {
     alias: "widget.home.navbar",
     config: {
       tabBarPosition: 'bottom',
-      defaults: {
-        html: 'text',
-        styleHtmlContent: true
-      },
+
       layout: {
-        pack: 'center',
+        pack: 'center'
       },
+
       items: [
-          {
-              xtype: 'homeMenuBtn'
-          },
-          {
-              xtype: 'searchBtn'         
-          },
-          {
-              xtype: 'newBtn'
-          },
-          {
-              xtype: 'aboutBtn'
-          },
-          {
-              xtype: 'settingsBtn'
-          }
+        {
+          iconCls: 'home',
+          title: 'Home'
+        },
+        {
+          iconCls: 'search',
+          title: 'Search'
+          // badgeText: '20'
+        }
+          // {
+          //     xtype: 'homecard'
+          // },
+          // {
+          //     xtype: 'searchcard'         
+          // },
+          // {
+          //     xtype: 'newpropertycard'
+          // },
+          // {
+          //     xtype: 'aboutcard'
+          // },
+          // {
+          //     xtype: 'settingscard'
+          // }
       ]    
     }
 });

@@ -2,7 +2,9 @@ Ext.define('FriendlyRent.view.home.about.faq.Page', {
   extend: 'Ext.Panel',
   alias:  'widget.home.about.faq.page',
   config: {
-    layout: 'vbox'
+    layout: 'vbox',
+    iconCls: 'info_plain2',
+    iconMask: true    
   },
   items: [
     {

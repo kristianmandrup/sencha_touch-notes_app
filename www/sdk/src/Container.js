@@ -715,6 +715,8 @@ Ext.define('Ext.Container', {
             index = me.indexOf(item),
             innerItems = me.getInnerItems();
 
+        // console.log('container remove item:', item)
+
         if (destroy === undefined) {
             destroy = me.getAutoDestroy();
         }
@@ -1163,6 +1165,7 @@ Ext.define('Ext.Container', {
 
         for (i = 0; i < ln; i++) {
             item = items[i];
+
             if (item.isDocked()) {
                 dockedItems.push(item);
             }

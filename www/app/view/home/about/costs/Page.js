@@ -3,6 +3,8 @@ Ext.define('FriendlyRent.view.home.about.costs.Page', {
   alias:  'widget.home.about.costs.page',
   config: {
     layout: 'vbox'
+  }
+
   },
   items: [
     {

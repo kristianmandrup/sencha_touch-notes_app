@@ -1,19 +1,25 @@
 Ext.define('FriendlyRent.view.home.Page', {
   extend: 'Ext.Panel',
-  alias:  'widget.home.page',
-  requires: ['FriendlyRent.view.home.TopBar', 'FriendlyRent.view.home.NavBar']
+  alias:  'widget.home_page',
+  xtype: 'homepage',
+
+  // requires: [
+  //   'FriendlyRent.view.home.Topbar'
+  // ],
+
   config: {
-    layout: 'vbox'
-  },
-  items: [
-    {
-        xtype 'home.topbar'
+    defaults: {
+      styleHtmlContent: true,
     },
-    {
-        xtype 'properties.map.content'  
-    },
-    {
-        xtype 'home.navbar'
-    }
+
+    iconCls: 'search',
+    html: 'placeholder text',
+    styleHtmlContent: true,
+    items: [{
+        docked: 'top',
+        xtype: 'toolbar',
+        title: 'Search'
+    }]
   }
 });
+

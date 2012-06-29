@@ -18,6 +18,41 @@
 
 // Your custom code goes here...
 
+// http://www.sencha.com/forum/showthread.php?126911-How-to-make-toolbar-buttons-appear-like-the-tab-bar-icons
+
+// http://www.sencha.com/forum/showthread.php?126183-using-TabPanel-button-icons-in-a-Toolbar
+
+.nav-bar .x-button {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+.nav-bar .x-button img {
+  position:relative;
+  top:-3px;
+}
+.nav-bar .x-button span {
+  padding-top:3px;
+  font-size: 9px !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: #000 0 -1px 1px;
+}
+
+.vertical-text {
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform: rotate(90deg);
+  white-space:nowrap;
+  display:block;
+  bottom:0;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-weight:normal;
+  text-shadow: 0px 0px 1px #333;
+}
+
 // custom extended slider
 
 .x-slider-field-input, .x-slider-field-text {

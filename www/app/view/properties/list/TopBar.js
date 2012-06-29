@@ -1,25 +1,16 @@
-Ext.define("FriendlyRent.view.home.TopBar", {
-  extend: 'Ext.Panel',
-  alias: "widget.home.topbar",
+
+Ext.define('FriendlyRent.view.properties.list.TopBar', {
+  extend: 'FriendlyRent.TopBar',
+  alias: 'widget.properties_list_topbar',
   config: {
-    tabBarPosition: 'top',
-    defaults: {
-      html: 'text',
-      styleHtmlContent: true
-    },
-    layout: {
-      pack: 'center',
-    },
     items: [
-        {
-            xtype: 'logo'
-        },
-        {
-            xtype: 'loginBtn'         
-        },
-        {
-            xtype: 'mapBtn'         
-        }
-    ]    
+      {
+        xtype: 'logo'
+      }, {
+        xtype: 'btn_login'
+      }, {
+        xtype: 'btn_map'
+      }
+    ]
   }
 });
