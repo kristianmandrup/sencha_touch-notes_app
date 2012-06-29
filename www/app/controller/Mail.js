@@ -1,16 +1,16 @@
 
-Ext.define('FriendlyRent.controller.registration.Tenant', {
+Ext.define('FriendlyRent.controller.Mail', {
   extend: 'Ext.app.Controller',
   loadStores: function() {
-    return Ext.getStore('Tenants').load();
+    return Ext.getStore('Mails').load();
   },
   launch: function() {
     this.callParent(arguments);
-    console.log("launch Tenants");
+    console.log("launch Mail");
     return loadStores;
   },
   init: function() {
     this.callParent(arguments);
-    return console.log("init Tenants");
+    return console.log("init Mail");
   }
 });

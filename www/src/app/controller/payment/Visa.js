@@ -1,4 +1,4 @@
-Ext.define("FriendlyRent.controller.mail.Trashbox", {
+Ext.define("FriendlyRent.controller.payment.Visa", {
 
     extend: "Ext.app.Controller",
     config: {
@@ -9,8 +9,6 @@ Ext.define("FriendlyRent.controller.mail.Trashbox", {
     },
 
     loadStores: function() {
-        var mailStore = Ext.getStore("Mails");
-        mailStore.load();
     },
 
     // Base Class functions.
@@ -19,11 +17,11 @@ Ext.define("FriendlyRent.controller.mail.Trashbox", {
 
         // loadStores;
 
-        console.log("launch inbox");
+        console.log("launch VISA payment");
     },
     init: function () {
         this.callParent(arguments);
-        console.log("init inbox");
+        console.log("init VISA payment");
     }
 });
 

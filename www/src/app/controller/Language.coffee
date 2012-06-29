@@ -8,11 +8,14 @@ Ext.define 	'Sencha.controller.Language'
     window.location.search = Ext.urlEncode "lang": record.get("code")
 
 	parseLanguage: ->    
-		params = Ext.urlDecode window.location.search.substring(1)
-		params.lang ? setLanguage(language) : this.setup()
+		params = Ext.urlDecode window.location.search.substring 1
+		if params.lang 
+      setLanguage(language)
+    else 
+      this.setup()
 
 	setLanguage: (params) ->
-		url = Ext.util.Format.format this.formatStr, params.lang
+    url = Ext.util.Format.format this.formatStr, params.lang
 	  Ext.Ajax.request
 	    url: url
 	    success: this.onSuccess
@@ -32,15 +35,15 @@ Ext.define 	'Sencha.controller.Language'
     this.setup()
 
 	setup: ->
-	    Ext.create 'Ext.FormPanel'
-        renderTo: 'datefield'
-        frame: true
-        title: 'Date picker'
-        width: 380
-        defaultType: 'datefield'
-        items: [
-        	{
-            	fieldLabel: 'Date'
-            	name: 'date'
-        	}
-        ]
+    Ext.create 'Ext.FormPanel'
+      renderTo: 'datefield'
+      frame: true
+      title: 'Date picker'
+      width: 380
+      defaultType: 'datefield'
+      items: [
+      	{
+          	fieldLabel: 'Date'
+          	name: 'date'
+      	}
+      ]

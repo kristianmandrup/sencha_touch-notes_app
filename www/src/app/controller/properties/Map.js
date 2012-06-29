@@ -1,4 +1,4 @@
-Ext.define("FriendlyRent.controller.mail.Inbox", {
+Ext.define("FriendlyRent.controller.property.Map", {
 
     extend: "Ext.app.Controller",
     config: {
@@ -9,8 +9,8 @@ Ext.define("FriendlyRent.controller.mail.Inbox", {
     },
 
     loadStores: function() {
-        var mailStore = Ext.getStore("Mails");
-        mailStore.load();
+        var propertyStore = Ext.getStore("Properties");
+        propertyStore.load();
     },
 
     // Base Class functions.
@@ -19,11 +19,11 @@ Ext.define("FriendlyRent.controller.mail.Inbox", {
 
         // loadStores;
 
-        console.log("launch inbox");
+        console.log("launch Property Map");
     },
     init: function () {
         this.callParent(arguments);
-        console.log("init inbox");
+        console.log("init Property Map");
     }
 });
 
