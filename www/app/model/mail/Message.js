@@ -1,5 +1,5 @@
 
-Ext.define('model.ContactInfo', {
+Ext.define('model.mail.Message', {
   extend: 'Ext.data.Model',
   config: {
     idProperty: 'id',
@@ -12,16 +12,28 @@ Ext.define('model.ContactInfo', {
         type: 'date',
         dateFormat: 'c'
       }, {
-        name: 'contact_hours',
+        name: 'subject',
         type: 'string'
       }, {
-        name: 'phone',
+        name: 'body',
         type: 'string'
       }, {
-        name: 'alt_phone',
+        name: 'type',
         type: 'string'
       }
     ],
+    hasOne: {
+      name: 'sender',
+      model: 'User'
+    },
+    belongsTo: {
+      name: 'account',
+      model: 'mail.Account'
+    },
+    hasMany: {
+      name: 'receivers',
+      model: 'User'
+    },
     validations: [
       {
         type: 'presence',
@@ -29,6 +41,10 @@ Ext.define('model.ContactInfo', {
       }, {
         type: 'presence',
         field: 'dateCreated'
+      }, {
+        type: 'presence',
+        field: 'subject',
+        message: 'Please enter a subject for this mail'
       }
     ]
   }

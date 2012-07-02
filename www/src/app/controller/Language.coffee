@@ -9,10 +9,7 @@ Ext.define 	'Sencha.controller.Language'
 
 	parseLanguage: ->    
 		params = Ext.urlDecode window.location.search.substring 1
-		if params.lang 
-      setLanguage(language)
-    else 
-      this.setup()
+		if params.lang then setLanguage(language) else this.setup()
 
 	setLanguage: (params) ->
     url = Ext.util.Format.format this.formatStr, params.lang

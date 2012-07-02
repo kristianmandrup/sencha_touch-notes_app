@@ -1,24 +1,41 @@
+
 Ext.define('FriendlyRent.model.Address', {
-    extend: 'Ext.data.Model',
-    
-    config: {
-        identifier: 'account',
-
-        idProperty: 'id',
-        fields: [
-            {name: 'id', type: 'int'},
-
-            {name: 'floor_adr',         type: 'auto'},
-            {name: 'number',            type: 'auto'},
-            {name: 'street',            type: 'auto'},
-            {name: 'city',              type: 'auto'},
-            {name: 'regiop',            type: 'auto'},
-            {name: 'zip',               type: 'auto'},
-            {name: 'country',           type: 'auto'}
-
-        ],
-        validations: [
-            { type: 'presence', field: 'id' }
-        ]
-    },
+  extend: 'Ext.data.Model',
+  config: {
+    identifier: 'account',
+    idProperty: 'id',
+    fields: [
+      {
+        name: 'id',
+        type: 'int'
+      }, {
+        name: 'floor_adr',
+        type: 'string'
+      }, {
+        name: 'number',
+        type: 'string'
+      }, {
+        name: 'street',
+        type: 'string'
+      }, {
+        name: 'city',
+        type: 'string'
+      }, {
+        name: 'region',
+        type: 'string'
+      }, {
+        name: 'zip',
+        type: 'int'
+      }, {
+        name: 'country',
+        type: 'string'
+      }
+    ],
+    validations: [
+      {
+        type: 'presence',
+        field: 'id'
+      }
+    ]
+  }
 });

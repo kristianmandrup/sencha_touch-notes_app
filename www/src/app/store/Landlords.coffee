@@ -7,7 +7,7 @@ Ext.define  'FriendlyRent.store.Landlords'
     model: 'FriendlyRent.model.Landlord'
     proxy:
       type:   'localstorage'
-      id:     'landlords-store'
+      id:     'landlord-store'
     sorters: [
       { property: 'dateCreated', direction: 'DESC'}
     ]
