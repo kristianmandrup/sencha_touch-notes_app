@@ -1,0 +1,47 @@
+      {
+          text:     I18n.t('favorites')
+          iconCls:  'favorites'
+          iconMask: true
+      }
+      {
+          text:     I18n.t('agents')
+          iconCls:  'user'
+          iconMask: true
+      }
+      {
+          text:     I18n.t('history')
+          iconCls:  'search'
+          iconMask: true
+      }
+
+
+
+      {
+        xtype: 'search_criteria_property_type'
+        name:  'property_type'
+      }
+      {
+        xtype: 'search_criteria_furnishment'
+        name:  'furnishment'
+      }
+      {
+        xtype: 'search_criteria_size'
+        name:  'size'
+      }      
+      {
+        xtype: 'search_criteria_rental_cost'
+        name:  'cost'
+      }
+      {
+        xtype: 'search_criteria_rental_period'
+        name:  'period'
+      }
+      {
+        xtype: 'search_criteria_rules'
+        name:  'rules'      
+      }
+      {
+        xtype: 'button'
+        name:  'create_agent'
+        label: I18n.t('agent.create')
+      }      

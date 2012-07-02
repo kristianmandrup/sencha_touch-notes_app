@@ -6,10 +6,13 @@ Ext.application
 
   models: []
   stores: []
-  controllers: []
+  controllers: [
+    "FriendlyRent.controller.Home"
+  ]
 
   views: [
-    "registration.landlord.why_us.Page" 
+    "FriendlyRent.view.home.Page"
+    "FriendlyRent.view.search.Page"
   ]
 
   icon:
@@ -28,9 +31,9 @@ Ext.application
     '1496x2048':  'resources/startup/1496x2048.png'
 
   launch: ->
-    console.log "launch"
-    page = Ext.create "FriendlyRent.view.registration.landlord.why_us.Page"
-    Ext.Viewport.add page
+    console.log 'launch'
+    home_page = Ext.create 'FriendlyRent.view.home.Page'    
+    Ext.Viewport.add home_page
 
   onUpdated: ->
     Ext.Msg.confirm(

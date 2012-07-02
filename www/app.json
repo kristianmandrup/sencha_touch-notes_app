@@ -48,7 +48,15 @@
         {
             "path": "lib/plugins/NavBar.js"
         },
-
+        {
+            "path": "lib/plugins/TopBar.js"
+        },
+        {
+            "path": "lib/plugins/SliderFieldInput.js"
+        },
+        {
+            "path": "lib/plugins/SliderFieldText.js"
+        },
         // {
         //     "path": "lib/deftjs/deft.js" // or deft-debug.js
         // },

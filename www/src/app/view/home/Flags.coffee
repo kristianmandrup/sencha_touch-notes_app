@@ -1,17 +1,28 @@
-Ext.define  'FriendlyRent.view.home.Navigation'
+Ext.define  'FriendlyRent.view.home.Flags'
   extend:   'Ext.Panel'
-  alias:    'widget.home_navigation'
+  alias:    'widget.home_flags'
   config:
-    layout: 'hbox'
+    layout: 
+      type:   'hbox'
+      pack: 'center'
+      align: 'middle' 
     items: [
       {
-          xtype:  'button'
-          text:   'Danish'
-          # iconCls: 'danish'
+        xtype:  'image'
+        src:    'resources/images/EnglishFlag.png'
+        id:     'english_flag'
+        height: 32
+        width:  32
       }
       {
-          xtype:  'button'
-          text:   'English'
-          # iconCls: 'english'
+        xtype:  'spacer'
+        width:  12
+      }
+      {
+        xtype:  'image'
+        id:     'danish_flag'
+        src:    'resources/images/DanishFlag.png'
+        height: 32
+        width:  32
       }
     ]

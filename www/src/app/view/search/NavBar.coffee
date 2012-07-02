@@ -4,27 +4,17 @@ Ext.define  'FriendlyRent.view.search.NavBar'
   config:
     items: [
       {
-          text:     I18n.t('search.menu')
+          html: 'menu'     # I18n.t('search.menu')
       }
       {
-          text:     I18n.t('search')
+          text:     'search' # I18n.t('search')
           iconCls:  'search'
+          iconMask: true          
       }
       {
-          text:     I18n.t('property')
+          text:     'property' # I18n.t('property')
           iconCls:  'home'
-      }
-      {
-          text:     I18n.t('favorites')
-          iconCls:  'favorites'
-      }
-      {
-          text:     I18n.t('agents')
-          iconCls:  'user'
-      }
-      {
-          text:     I18n.t('history')
-          iconCls:  'search'
+          iconMask: true
       }
     ]    
 
