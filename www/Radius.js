@@ -6,9 +6,9 @@ Ext.define('FriendlyRent.view.search.criteria.Radius', {
 
 ({
   config: {
+    label: 'Radius',
     value: 5,
     minValue: 1,
-    maxValue: 50,
-    label: 'Radius'
+    maxValue: 50
   }
 });

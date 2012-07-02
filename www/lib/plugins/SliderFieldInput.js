@@ -14,17 +14,7 @@ Ext.define('Ext.field.SliderInput', {
   config: {
     cls: Ext.baseCSSPrefix + 'slider-field-input',
     tabIndex: -1,
-    helperPosition: 'right',
-    valueMapper: function(value) {
-      var valueMap = this.valueMap;
-      if (valueMap) {
-        console.log('mapped value', value);
-        return valueMap[value];
-      } else {
-        console.log('value', value);
-        return value;
-      }
-    }
+    helperPosition: 'right'
   },
 
   proxyConfig: {
@@ -41,12 +31,17 @@ Ext.define('Ext.field.SliderInput', {
       config.value = config.values;
     }
 
-    if (config.hasOwnProperty('valueMap')) {
-      if (config.autoValues == true) {
-        config.value = config.defaultValue || 0;
-        config.minValue = 0;
-        config.maxValue = config.valueMap.size -1;
-        config.increment = 1;
+    // console.log('setup values', this.config.valueMap);
+    if (this.config.valueMap) {
+      // console.log('has valuemap:', this.config.autoValues);
+      if (this.config.autoValues == true) {
+        // console.log('has autovalues');
+        this.config.value = this.config.defaultValue || 0;
+        this.config.minValue = 0;
+        this.config.maxValue = this.config.valueMap.length -1;
+        // console.log('default', this.config.value);
+        // console.log('min', this.config.minValue);
+        // console.log('max', this.config.maxValue);
       }
     }
 
@@ -64,6 +59,19 @@ Ext.define('Ext.field.SliderInput', {
       dragend: 'onSliderDragEnd'
     });
   },
+
+  valueMapper: function(value, scope) {
+    var valueMap = this.config.valueMap;
+    // console.log('Input Valuemap', valueMap)
+    if (valueMap) {
+      // console.log('mapped value', value);
+      return valueMap[value];
+    } else {
+      // console.log('orig value', value);
+      return value;
+    }
+  },
+
 
   getElementConfig: function() {
     var self = this;

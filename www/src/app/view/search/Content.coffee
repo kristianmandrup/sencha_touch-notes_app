@@ -4,6 +4,7 @@ Ext.define  'FriendlyRent.view.search.Content'
   requires: [
     'FriendlyRent.view.search.criteria.Location'
     'FriendlyRent.view.search.criteria.Radius'
+    'FriendlyRent.view.search.criteria.PropertyType'
   ]
   config:
     layout: 'vbox'
@@ -15,5 +16,9 @@ Ext.define  'FriendlyRent.view.search.Content'
       {
         xtype: 'search_criteria_radius'
         name:  'radius'
+      }
+      {
+        xtype: 'search_criteria_property_type'
+        name:  'property_type'
       }      
     ]

@@ -9,14 +9,7 @@ Ext.define('Ext.field.SliderText', {
   config: {
     cls: Ext.baseCSSPrefix + 'slider-field-text',
     tabIndex: -1,
-    helperPosition: 'right',
-    valueMapper: function(value) {
-      if (self.config.valueMap) {
-        self.config.valueMap[value];
-      } else {
-        value;
-      }
-    }
+    helperPosition: 'right'
   },
 
   proxyConfig: {
@@ -32,13 +25,17 @@ Ext.define('Ext.field.SliderText', {
     if (config.hasOwnProperty('values')) {
       config.value = config.values;
     }
-
-    if (config.hasOwnProperty('valueMap')) {
-      if (config.autoValues == true) {
-        config.value = config.defaultValue || 0;
-        config.minValue = 0;
-        config.maxValue = config.valueMap.size -1;
-        config.increment = 1;
+    // console.log('setup values', this.config.valueMap);
+    if (this.config.valueMap) {
+      // console.log('has valuemap:', this.config.autoValues);
+      if (this.config.autoValues == true) {
+        // console.log('has autovalues');
+        this.config.value = this.config.defaultValue || 0;
+        this.config.minValue = 0;
+        this.config.maxValue = this.config.valueMap.length -1;
+        // console.log('default', this.config.value);
+        // console.log('min', this.config.minValue);
+        // console.log('max', this.config.maxValue);
       }
     }
 
@@ -78,9 +75,10 @@ Ext.define('Ext.field.SliderText', {
   },
   
   setHelperValue: function(value) {
-    var valueMapper = self.config.valueMapper;
-    var value = valueMapper ? valueMapper(value) : value;
-    this.helperInput.dom.text = value;
+    var value = this.valueMapper(value)
+    // console.log('value:', value);
+    // console.log('helperInput', this.helperInput);
+    this.helperInput.dom.innerText = value;
   },
   
   // @private
@@ -121,6 +119,19 @@ Ext.define('Ext.field.SliderText', {
    */
   getValues: function() {
     return this.getValue();
+  },
+
+  valueMapper: function(value) {
+    // console.log('Config', config)
+    var valueMap = this.config.valueMap;
+    // console.log('Text Valuemap', valueMap)
+    if (valueMap) {
+      // console.log('mapped value', value);
+      return valueMap[value];
+    } else {
+      // console.log('orig value', value);
+      return value;
+    }
   },
 
   reset: function() {
