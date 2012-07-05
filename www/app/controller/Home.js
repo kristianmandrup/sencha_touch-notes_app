@@ -1,9 +1,10 @@
 
 Ext.define('FriendlyRent.controller.Home', {
   extend: 'Ext.app.Controller',
+  requires: ['FriendlyRent.view.search.Page', 'FriendlyRent.view.search.favorites.Page'],
   config: {
     refs: {
-      searchButton: 'button[action=search]',
+      searchButton: 'button[action=home_search]',
       newPropertyButton: 'button[action=newProperty]',
       danishButton: '#danish_flag',
       englishButton: '#english_flag'
@@ -24,11 +25,11 @@ Ext.define('FriendlyRent.controller.Home', {
     }
   },
   onTapSearch: function() {
-    var search_page;
-    console.log('Go to Search');
-    search_page = Ext.create('FriendlyRent.view.search.Page');
+    var favorites_page;
+    console.log('Go to Favorites');
+    favorites_page = Ext.create('FriendlyRent.view.search.favorites.Page');
     Ext.Viewport.removeAt(0);
-    return Ext.Viewport.add(search_page);
+    return Ext.Viewport.add(favorites_page);
   },
   onTapNewProperty: function() {
     return console.log('Go to New Property');

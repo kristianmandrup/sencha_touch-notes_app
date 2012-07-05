@@ -19,7 +19,7 @@ Ext.define  'FriendlyRent.view.home.Navigation'
           iconCls:  'search'
           itemId:   'searchBtn'
           id:       'searchBtn'
-          action:   'search'
+          action:   'home_search'
           iconMask: true
           text:     'Search home'        
           cls:      'main-button'

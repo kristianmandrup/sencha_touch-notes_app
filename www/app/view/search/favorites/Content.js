@@ -1,14 +1,16 @@
 
 Ext.define('FriendlyRent.view.search.favorites.Content', {
-  extend: 'Ext.dataview.List',
+  extend: 'Ext.List',
   alias: 'widget.search_favorites_content',
+  requires: ['FriendlyRent.store.Favorites'],
   config: {
     store: 'Favorites',
-    itemId: 'favoritesList',
+    itemId: 'favorites_list',
     loadingText: 'Loading favorites...',
     emptyText: '<div class="favorites-list empty-text">No favorites found.</div>',
-    onItemDisclosure: true,
-    grouped: true,
-    itemTpl: '<div class="list-item favorite image">{image.src}</div><div class="list-item content">{title}</div>'
+    itemTpl: Ext.XTemplate.from("property"),
+    onItemDisclosure: function(record, btn, index) {
+      return console.log('Disclose Favorite', record, index);
+    }
   }
 });

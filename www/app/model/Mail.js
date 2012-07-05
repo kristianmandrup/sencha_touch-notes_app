@@ -24,7 +24,7 @@ Ext.define('model.Mail', {
     ],
     hasOne: {
       name: 'sender',
-      type: 'account'
+      model: 'User'
     },
     hasMany: {
       name: 'receivers',

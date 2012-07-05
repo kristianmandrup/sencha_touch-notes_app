@@ -1,13 +1,42 @@
+Ext.Loader.setPath
+  'Ext.io':   'sdk/sencha-io-0.3.3/src/io'
+  'Ext.cf':   'sdk/sencha-io-0.3.3/src/cf'
+  'Ext':      'sdk/src'
+  'Ux' :      'lib/Ux'
+  # 'PathMenu': 'modules/PathMenu'
+  # 'Share':    'modules/Share'
+  # 'Photos':   'modules/Photos'
+
+# watchTemplates(
+#   bundle:
+#     className:  'FriendlyRent.Templates',
+#     fileName:   'lib/Templates.js'
+#   templatesPath: 'templates'
+# )
+
 Ext.application
   name: 'FriendlyRent'
-  requires: [
-    "Ext.MessageBox"
+  requires: [    
   ]
-
   models: []
-  stores: []
+  stores: [
+    "Favorites", "Agents"
+  ]
   controllers: [
     "FriendlyRent.controller.Home"
+    "FriendlyRent.controller.Search"
+
+    # http://www.sencha.com/blog/sencha-io-photo-sharing-example-using-sencha-touch
+    # include Ext.io.Controller to manage the sencha.io connection
+    # 'Ext.io.Controller'
+    # Controller for the main application
+    # 'Application'
+    # Controller of the module to manage photos
+    # 'Photos.controller.Photos'
+    # Controller of the module for sharing images between users
+    # 'Share.controller.Share'
+    # Controller for the path menu
+    # 'PathMenu.controller.Menu'    
   ]
 
   views: [
@@ -29,6 +58,22 @@ Ext.application
     '748x1024':   'resources/startup/748x1024.png'
     '1536x2008':  'resources/startup/1536x2008.png'
     '1496x2048':  'resources/startup/1496x2048.png'
+
+  # Add sencha.io app configuration.
+  config:
+    io:
+      # Sencha.io      
+      # app id string configured on http://developer.sencha.io/apps
+      appId: 'Uk0e22q24n5ocdvb9i10fUS3IUU'
+      # app secret
+      appSecret: 'iKrtkvW8AZlE1oOj'
+      # logging level. Should be one of "none", "debug", "info", "warn" or "error". Defaults to "error".
+      # logLevel: 'error'
+      logLevel: 'debug'
+      # If you don't want to attempt to authenticate on startup set this to false. defaults to true
+      authOnStartup: true
+      # If you don't want to automatically trigger the login panel when your application starts then set manualLogin to true
+      manualLogin: true
 
   launch: ->
     console.log 'launch'

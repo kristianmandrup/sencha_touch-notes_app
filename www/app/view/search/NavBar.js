@@ -9,10 +9,22 @@ Ext.define('FriendlyRent.view.search.NavBar', {
       }, {
         text: 'search',
         iconCls: 'search',
+        action: 'search',
         iconMask: true
       }, {
-        text: 'property',
-        iconCls: 'home',
+        text: 'favorites',
+        iconCls: 'favorites',
+        action: 'favorites',
+        iconMask: true
+      }, {
+        text: 'agents',
+        iconCls: 'user',
+        action: 'agents',
+        iconMask: true
+      }, {
+        text: 'history',
+        iconCls: 'search',
+        action: 'history',
         iconMask: true
       }
     ]

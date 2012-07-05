@@ -1,16 +1,22 @@
 Ext.define  'FriendlyRent.view.search.history.Page'
   extend:   'Ext.Panel'
   alias:    'widget.search_history_page'
+  requires: [
+    'FriendlyRent.view.search.TopBar'
+    'FriendlyRent.view.search.history.Content'
+    'FriendlyRent.view.search.NavBar'
+  ]
   config:
-    layout: 'vbox'
     items: [
       {
-          xtype 'search_topbar'
+        xtype: 'search_topbar'
+        cls: 'nav-bar'
       }
       {
-          xtype 'search_history_content'  
+        xtype: 'search_history_content'
       }
       {
-          xtype 'search_navbar'
+        xtype: 'search_navbar'
+        cls: 'nav-bar'
       }
-    }
+    ]

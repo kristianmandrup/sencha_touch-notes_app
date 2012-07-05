@@ -11,7 +11,7 @@ Ext.define  'model.Mail'
       # IMPORTANT: can't have a status like bookmarked or replied, as a message 
       # will appear in multiple accounts and for each account have a uniques status
     ]
-    hasOne:  {name: 'sender',        type:  'account'}
+    hasOne:  {name: 'sender',        model: 'User'}
     hasMany: {name: 'receivers',     model: 'User'}
     validations: [
       { type: 'presence', field: 'id' }

@@ -1,4 +1,4 @@
-Ext.define  'search.Criteria'
+Ext.define  'FriendlyRent.model.search.Criteria'
   extend: 'Ext.data.Model'    
   config:
     idProperty: 'id'
@@ -18,13 +18,25 @@ Ext.define  'search.Criteria'
       {name: 'roomsMin',          type: 'int'}
       {name: 'roomsMax',          type: 'int'}
 
-      {name: 'rentalCostMin',     type: 'int'}
-      {name: 'rentalCostMax',     type: 'int'}
+      {name: 'costMin',           type: 'int'}
+      {name: 'costMax',           type: 'int'}
 
       {name: 'furnishment',       type: 'string'}
     ]
     validations: [
       { type: 'presence', field: 'id' }
       { type: 'presence', field: 'dateCreated' }
-      { type: 'presence', field: 'location' }
+      # { type: 'presence', field: 'location' }
     ]
+  asText: ->
+    "${location} ${radius} km, ${rooms} ${propertyTypes}, ${cost}"
+  location: ->
+    this.getLocation()
+  propertyTypes: ->
+    this.getPropertyTypes()
+  radius: ->
+    "${this.getRadius()} km"
+  rooms: ->
+    if not this.getRoomsMax() then "${roomsMin}" else "${roomsMin} - ${roomsMax}"
+  cost: ->
+    if not this.getCostMax() then "${costMin}" else "${costMin} - ${costMax}"

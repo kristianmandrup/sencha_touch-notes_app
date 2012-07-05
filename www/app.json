@@ -33,7 +33,10 @@
      */
     "js": [
         {
-            "path": "sdk/sencha-touch.js"
+             "path": "sdk/sencha-io-0.3.3/lib/socket.io.js"
+        },
+        {
+            "path": "sdk/sencha-touch-debug.js"
         },
         {
             "path": "lib/jquery/jquery-1.7.2.js"
@@ -58,11 +61,12 @@
             "path": "lib/plugins/SliderFieldText.js"
         },
         // {
+        //     "path": "lib/Templates.js"
+        // },
+
+        // {
         //     "path": "lib/deftjs/deft.js" // or deft-debug.js
         // },
-        // {
-        //     "path": "lib/sencha-io/sencha-io.js"
-        // },        
         // {
         //     "path": "lib/jasmine/jasmine.js"
         // },
@@ -93,9 +97,9 @@
      *      }
      */
     "css": [
-        {
-            "path": "lib/jasmine/jasmine.css"
-        },
+        // {
+        //     "path": "lib/jasmine/jasmine.css"
+        // },
         {
             "path": "resources/css/app.css",
             "update": "delta"

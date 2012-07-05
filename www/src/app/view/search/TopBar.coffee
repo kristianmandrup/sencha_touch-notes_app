@@ -8,13 +8,13 @@ Ext.define  'FriendlyRent.view.search.TopBar'
         xtype: 'spacer'
       }
       {          
-          iconCls: 'list'
-          iconMask: true
-          text: 'list' # text: I18n.t('list')
+        iconCls: 'list'
+        iconMask: true
+        text:     'list' # text: I18n.t('list')
       }
       {          
-          iconCls: 'globe2'
-          iconMask: true
-          text: 'map' # text: I18n.t('map')
+        iconCls: 'globe2'
+        iconMask: true
+        text:     'map' # text: I18n.t('map')
       }
     ]    

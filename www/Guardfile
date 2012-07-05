@@ -7,7 +7,7 @@ end
 
 # app
 guard 'coffeescript', :output => '.', :bare => true do
-  watch %r{^src/.+\.coffee$}
+  watch %r{^src/app.coffee$}
 end
 
 # lib
@@ -24,8 +24,8 @@ guard 'coffeescript', :output => 'test', :bare => true do
   watch %r{^test/coffee/config\.coffee$}
 end
 
-config = File.expand_path "resources/sass/config.rb", __FILE__
-path = File.dirname(__FILE__) # File.expand_path "../..", config
+config = File.expand_path "../resources/sass/config.rb", __FILE__
+path = File.expand_path "../..", config
 
 guard 'compass', :project_path => path,  :configuration_file => config do
   watch %r{^resources/(.+\.scss)$}

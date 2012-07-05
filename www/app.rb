@@ -21,6 +21,18 @@ else "development"
   set :public_folder, "./"
 end
 
+helpers do
+  def templates
+    Dir.glob("templates/**").map do |template|
+      name = File.basename(template, ".html")
+      content = open(template).read
+      "<textarea id='#{name}' class='x-hidden-display'>#{content}</textarea>"
+    end.join("\n")
+  end
+end
+
+# set :views, Proc.new { File.join(root, "app/view") }
+
 get "/" do
-  redirect "/index.html"
+  erb :index
 end

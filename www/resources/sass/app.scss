@@ -40,7 +40,29 @@ $base-gradien: 'glossy';
   }
 }
 
+.property-image {
+  float: left;
+  width: 140px;
+  height: 100px;
+}
+
+.property-content {
+  padding-left: 20px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
 // @include custom-iconmask('search_white');
+
+.x-slider .x-thumb::before {
+  width:  1.5em;
+  height: 1.5em;
+  top:    0.3em;
+  left:   0.3em;  
+}
 
 .main-button {
   margin-bottom: 10px;

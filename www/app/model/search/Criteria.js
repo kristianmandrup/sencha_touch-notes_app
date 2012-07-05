@@ -1,5 +1,5 @@
 
-Ext.define('search.Criteria', {
+Ext.define('FriendlyRent.model.search.Criteria', {
   extend: 'Ext.data.Model',
   config: {
     idProperty: 'id',
@@ -33,10 +33,10 @@ Ext.define('search.Criteria', {
         name: 'roomsMax',
         type: 'int'
       }, {
-        name: 'rentalCostMin',
+        name: 'costMin',
         type: 'int'
       }, {
-        name: 'rentalCostMax',
+        name: 'costMax',
         type: 'int'
       }, {
         name: 'furnishment',
@@ -50,10 +50,33 @@ Ext.define('search.Criteria', {
       }, {
         type: 'presence',
         field: 'dateCreated'
-      }, {
-        type: 'presence',
-        field: 'location'
       }
     ]
+  },
+  asText: function() {
+    return "${location} ${radius} km, ${rooms} ${propertyTypes}, ${cost}";
+  },
+  location: function() {
+    return this.getLocation();
+  },
+  propertyTypes: function() {
+    return this.getPropertyTypes();
+  },
+  radius: function() {
+    return "${this.getRadius()} km";
+  },
+  rooms: function() {
+    if (!this.getRoomsMax()) {
+      return "${roomsMin}";
+    } else {
+      return "${roomsMin} - ${roomsMax}";
+    }
+  },
+  cost: function() {
+    if (!this.getCostMax()) {
+      return "${costMin}";
+    } else {
+      return "${costMin} - ${costMax}";
+    }
   }
 });

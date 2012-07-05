@@ -1,5 +1,5 @@
 
-Ext.define('search.Favorite', {
+Ext.define('FriendlyRent.model.search.Favorite', {
   extend: 'Ext.data.Model',
   config: {
     idProperty: 'id',

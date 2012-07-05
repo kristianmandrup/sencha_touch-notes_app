@@ -1,0 +1,1 @@
+# http://www.sencha.com/forum/showthread.php?100251-Extending-slider-with-text-fields-to-accept-range

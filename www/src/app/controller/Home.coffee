@@ -1,8 +1,12 @@
 Ext.define  'FriendlyRent.controller.Home'
   extend:   'Ext.app.Controller'
+  requires: [
+    'FriendlyRent.view.search.Page'
+    'FriendlyRent.view.search.favorites.Page'
+  ]  
   config:
     refs:
-      searchButton:       'button[action=search]'
+      searchButton:       'button[action=home_search]'
       newPropertyButton:  'button[action=newProperty]'
       danishButton:       '#danish_flag'
       englishButton:      '#english_flag'
@@ -16,10 +20,11 @@ Ext.define  'FriendlyRent.controller.Home'
       englishButton:
         tap: 'onSelectEnglishLang'
   onTapSearch: ->
-    console.log 'Go to Search'
-    search_page = Ext.create 'FriendlyRent.view.search.Page'
+    console.log 'Go to Favorites'
+    # search_page = Ext.create 'FriendlyRent.view.search.Page'
+    favorites_page = Ext.create 'FriendlyRent.view.search.favorites.Page'
     Ext.Viewport.removeAt(0)
-    Ext.Viewport.add search_page
+    Ext.Viewport.add favorites_page
   onTapNewProperty: ->
     console.log 'Go to New Property'
   onSelectDanishLang: ->

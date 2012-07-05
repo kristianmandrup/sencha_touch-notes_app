@@ -1,19 +1,22 @@
-Ext.define('FriendlyRent.view.search.favorites.Page', {
-  extend: 'FriendlyRent.view.properties.list.Page',
 
-  alias:  'widget.search.favorites.Page',
+Ext.define('FriendlyRent.view.search.favorites.Page', {
+  extend: "Ext.Panel",
+  alias: 'widget.search_favorites_page',
+  requires: ['FriendlyRent.view.search.TopBar', 'FriendlyRent.view.search.NavBar', 'FriendlyRent.view.search.favorites.Content'],
   config: {
-    layout: 'vbox'
-  },
-  items: [
-    {
-        xtype 'search.topbar'
+    layout: {
+      type: 'fit'
     },
-    {
-        xtype 'search.favorites.content'  
-    },
-    {
-        xtype 'search.navbar'
-    }
+    items: [
+      {
+        xtype: 'search_topbar',
+        cls: 'nav-bar'
+      }, {
+        xtype: 'search_favorites_content'
+      }, {
+        xtype: 'search_navbar',
+        cls: 'nav-bar'
+      }
+    ]
   }
 });

@@ -1,10 +1,17 @@
 
+Ext.Loader.setPath({
+  'Ext.io': 'sdk/sencha-io-0.3.3/src/io',
+  'Ext.cf': 'sdk/sencha-io-0.3.3/src/cf',
+  'Ext': 'sdk/src',
+  'Ux': 'lib/Ux'
+});
+
 Ext.application({
   name: 'FriendlyRent',
-  requires: ["Ext.MessageBox"],
+  requires: [],
   models: [],
-  stores: [],
-  controllers: ["FriendlyRent.controller.Home"],
+  stores: ["Favorites", "Agents"],
+  controllers: ["FriendlyRent.controller.Home", "FriendlyRent.controller.Search"],
   views: ["FriendlyRent.view.home.Page", "FriendlyRent.view.search.Page"],
   icon: {
     '57': 'resources/icons/Icon.png',
@@ -20,6 +27,15 @@ Ext.application({
     '748x1024': 'resources/startup/748x1024.png',
     '1536x2008': 'resources/startup/1536x2008.png',
     '1496x2048': 'resources/startup/1496x2048.png'
+  },
+  config: {
+    io: {
+      appId: 'Uk0e22q24n5ocdvb9i10fUS3IUU',
+      appSecret: 'iKrtkvW8AZlE1oOj',
+      logLevel: 'debug',
+      authOnStartup: true,
+      manualLogin: true
+    }
   },
   launch: function() {
     var home_page;
