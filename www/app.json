@@ -60,10 +60,9 @@
         {
             "path": "lib/plugins/SliderFieldText.js"
         },
-        // {
-        //     "path": "lib/Templates.js"
-        // },
-
+        {
+            "path": "test/siesta_harness.js"
+        },
         // {
         //     "path": "lib/deftjs/deft.js" // or deft-debug.js
         // },

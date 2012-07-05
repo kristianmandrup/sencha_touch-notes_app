@@ -18,7 +18,7 @@ Ext.define  'FriendlyRent.model.Property'
       ],
       hasOne: [
         {name: 'costs',         model: 'property.Costs'}
-        {name: 'rental_period', model: 'property.RentalPeriod'}
+        {name: 'period',        model: 'property.RentalPeriod'}
         {name: 'location',      model: 'property.Location'}
         {name: 'photo_gallery', model: 'photo.Gallery'}
       ]

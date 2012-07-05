@@ -1,0 +1,69 @@
+{
+// Benchmarking    
+    
+    BenchModel : [
+        'Siesta.Benchmark.Project'
+    ],
+    
+    
+    BenchCore : [
+        '+Common',
+        
+        'Siesta.Benchmark.Stat',
+        'Siesta.Role.Ident',
+        
+        'Siesta.Benchmark.Timer',
+        'Siesta.Benchmark.Clock',
+        
+        'Siesta.Benchmark',
+        'Siesta.Benchmark.Measurement',
+        
+        'Siesta.Benchmark.Harness',
+        
+        '+BenchModel'
+    ],
+    
+    BenchWeb : [
+        '+BenchCore',
+        
+        'ExtX.Reference.Slot',
+        //'node_modules/joosex-simplerequest/lib/JooseX/SimpleRequest.js',
+        
+        'Siesta.Content.Manager.Browser',
+        'Siesta.Benchmark.Harness.Browser',
+        
+        'Siesta.Benchmark.Harness.Browser.Model.BenchmarkFile',
+        'Siesta.Benchmark.Harness.Browser.Model.Measurement',
+        
+        'Siesta.Benchmark.Harness.Browser.UI.Viewport',
+        'Siesta.Benchmark.Harness.Browser.UI.BenchmarkGrid',
+        'Siesta.Benchmark.Harness.Browser.UI.MeasurementGrid',
+        'Siesta.Benchmark.Harness.Browser.UI.MeasurementGrid.ComparisonChart'
+    ],
+    
+    
+    BenchWebBundle : {
+        saveAs      : 'siesta-bench-all.js',
+    
+        contains    : [
+            'node_modules/joose/joose-all.js',
+            'node_modules/kiokujs-backend-couchdb/kiokujs-backend-couchdb-all.js',
+            'node_modules/scope-provider/scope-provider-all.js',
+            'node_modules/joosex-observable/joosex-observable-all.js',
+            
+            '+BenchWeb'
+        ]
+    },
+    
+    
+    BenchCSS : {
+        
+        saveAs      : 'resources/css/siesta-bench-all.css',
+    
+        contains    : [
+            'lib/Siesta/Benchmark/Harness/Browser/UI/Viewport.css',
+            'lib/Siesta/Benchmark/Harness/Browser/UI/BenchmarkGrid.css',
+            'lib/Siesta/Benchmark/Harness/Browser/UI/MeasurementGrid.css'
+        ]
+    }
+}

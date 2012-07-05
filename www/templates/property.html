@@ -1,5 +1,11 @@
 <div class="property-image">
 	<img src="resources/images/properties/{image}" height="100" width="140"/>
 </div>
-<div class="property-content">{title}</div>
+<div class="property-content">
+	<div class="title">{title}</div>
+	<div class="data">{location}</div>
+	<div class="data">{[this.typeDesc(values)]}</div>
+	<div class="data">{period:this.periodDesc}</div>
+	<div class="data">{cost:this.costDesc}</div>
+</div>
 <div class="clear"/>

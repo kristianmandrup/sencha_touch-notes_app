@@ -37,7 +37,7 @@ Ext.define('FriendlyRent.model.Property', {
         name: 'costs',
         model: 'property.Costs'
       }, {
-        name: 'rental_period',
+        name: 'period',
         model: 'property.RentalPeriod'
       }, {
         name: 'location',
