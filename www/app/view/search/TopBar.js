@@ -6,11 +6,10 @@ Ext.define('FriendlyRent.view.search.TopBar', {
     docked: 'top',
     items: [
       {
-        xtype: 'spacer'
+        ui: 'orange-back',
+        text: 'back'
       }, {
-        iconCls: 'list',
-        iconMask: true,
-        text: 'list'
+        xtype: 'spacer'
       }, {
         iconCls: 'globe2',
         iconMask: true,

@@ -1,6 +1,9 @@
 // $base-color: #ff6200;
 $base-gradient: 'glossy';
 
+$fr_orange: #ff6200;
+$fr_purple: #8e40c7;
+
 // $active-color: darken(saturate($base-color, 55%), 90%);
 // $alert-color:#54E344;
 // $button-radius:0;
@@ -27,16 +30,16 @@ $base-gradient: 'glossy';
 @include sencha-form;
 @include sencha-msgbox;
 
-@include sencha-toolbar-ui('charcoal', #333);
-@include sencha-toolbar-ui('gray', gray);
+@include sencha-toolbar-ui('charcoal', #333, 'glossy');
 
 // How-to-make-toolbar-buttons-appear-like-the-tab-bar-icons
 // using-TabPanel-button-icons-in-a-Toolbar
 
 // http://techtalktone.wordpress.com/2012/02/28/use-custom-button-icons-in-sencha-touch/
 
-@include sencha-button-ui('orange', #ff6200, 'glossy');
-@include sencha-button-ui('purple', #8e40c7, 'glossy');
+@include sencha-button-ui('orange', #ff9900, 'glossy');
+@include sencha-button-ui('purple', $fr_purple, 'glossy');
+@include sencha-button-ui('dp', #341050, 'glossy');
 
 @mixin custom-iconmask($name) {
   .x-tab img.#{$name}, .x-button img.x-icon-mask.#{$name} {
@@ -44,22 +47,33 @@ $base-gradient: 'glossy';
   }
 }
 
-$basic-background: #eee;
-
 #home_page {
-  // lighten($basic-background, 20%);
-  background-color: #eee; 
+  background-color: #ddc; // lighten($fr_purple, 40%); 
 }
 
 .property-image {
   float: left;
   height: 120px;
   width: 160px;  
-  padding-right: 10px;
+  padding-right: 12px;
+  box-shadow: 4px 4px 2px #888;
 }
 
-.x-list-container:nth-child(odd) {
-  background-color: #ccc;
+$light-orange: #ff9900;
+
+// This also works: :nth-of-type(2)
+.x-toolbar .x-button.active-icon {
+  .x-button-icon {    
+    background: #ff9900 !important; // lighten($fr_orange, 50%)
+  }
+  .x-button-label {
+   color: #ff9900 !important; // lighten($fr_orange, 50%)
+  }
+}
+
+.x-list-item {
+  @include background-image(linear-gradient(#ccc, #fff));
+  // background: #ddd; // lighten($fr_purple, 30%)
 }
 
 .property-content {
@@ -68,18 +82,28 @@ $basic-background: #eee;
 
   .title {
     font-weight: bold;
-    font-size: 16px;
+    text-shadow: 1px 1px gray;
+    font-size: 17px;
+    padding-bottom: 2px;
+    color: white;
   }
 
   .cost {
-    @include single-text-shadow;
+    text-shadow: 1px 1px gray;
     color: orange;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    float: left;
+    padding-top: 2px;
+  }
+
+  .favorite-stars {
+    float: right;
+    padding-top: 2px;
   }
 
   .data {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -119,11 +143,11 @@ $basic-background: #eee;
 
   img {
     position:relative;
-    top:-3px;
+    top:-2px;
   }
   span {
-    padding-top:3px;
-    font-size: 9px !important;
+    padding-top: 2px;
+    font-size: 12px !important;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-shadow: #000 0 -1px 1px;

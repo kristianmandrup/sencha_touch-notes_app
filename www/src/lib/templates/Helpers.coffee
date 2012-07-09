@@ -6,12 +6,12 @@ class PropertyHelper
   mainDesc: (item) ->
     "#{this.sizeDesc(item)} #{item.type} #{this.floorDesc(item)}"
   secondaryDesc: (item) ->
-    "#{this.roomDesc(item)} #{this.furnishedDesc(item)}"
+    "#{this.roomDesc(item)}"
   sizeDesc: (item) ->
     "#{item.size} m2"
   roomDesc: (item) ->
     room = if item.rooms > 1 then "rooms" else "room"
-    "#{item.rooms}/#{item.bedrooms} #{room}"
+    "#{item.rooms}/#{item.bedrooms} #{this.furnishedDesc(item)} #{room}"
   floorDesc: (item) ->
     adj = switch item.floor
       when 1 then "st"
@@ -20,13 +20,11 @@ class PropertyHelper
       else "th"
     if item.floor > 0 then "on #{item.floor}#{adj} floor" else ""
   furnishedDesc: (item) ->
-    return "#{item.furnished} F" if item.furnished and item.furnished != true 
-    return "F" if item.furnished
-    ""
+    if item.furnished then "furnished" else ""
   costDesc: (cost) ->
     "#{cost} DKK"
   locationDesc: (item) ->
-    "#{item.city} #{item.region} #{item.countryCode}"
+    "#{item.city} (#{item.region}, #{item.countryCode})"
   periodDesc: (period) ->
     if period then "#{period.start_date} to #{period.end_date}" else ""
 

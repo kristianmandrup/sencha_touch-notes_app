@@ -3,6 +3,6 @@ Ext.define  'FriendlyRent.NavBar'
   alias:    'widget.navbar'
   config:
     docked: 'bottom'
-    ui: 	'gray'
+    # ui: 	'dp'
     layout:
       pack: 'center'

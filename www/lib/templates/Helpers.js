@@ -25,7 +25,7 @@ PropertyHelper = (function() {
   };
 
   PropertyHelper.prototype.secondaryDesc = function(item) {
-    return "" + (this.roomDesc(item)) + " " + (this.furnishedDesc(item));
+    return "" + (this.roomDesc(item));
   };
 
   PropertyHelper.prototype.sizeDesc = function(item) {
@@ -35,7 +35,7 @@ PropertyHelper = (function() {
   PropertyHelper.prototype.roomDesc = function(item) {
     var room;
     room = item.rooms > 1 ? "rooms" : "room";
-    return "" + item.rooms + "/" + item.bedrooms + " " + room;
+    return "" + item.rooms + "/" + item.bedrooms + " " + (this.furnishedDesc(item)) + " " + room;
   };
 
   PropertyHelper.prototype.floorDesc = function(item) {
@@ -60,13 +60,11 @@ PropertyHelper = (function() {
   };
 
   PropertyHelper.prototype.furnishedDesc = function(item) {
-    if (item.furnished && item.furnished !== true) {
-      return "" + item.furnished + " F";
-    }
     if (item.furnished) {
-      return "F";
+      return "furnished";
+    } else {
+      return "";
     }
-    return "";
   };
 
   PropertyHelper.prototype.costDesc = function(cost) {
@@ -74,7 +72,7 @@ PropertyHelper = (function() {
   };
 
   PropertyHelper.prototype.locationDesc = function(item) {
-    return "" + item.city + " " + item.region + " " + item.countryCode;
+    return "" + item.city + " (" + item.region + ", " + item.countryCode + ")";
   };
 
   PropertyHelper.prototype.periodDesc = function(period) {

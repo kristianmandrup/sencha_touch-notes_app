@@ -8,10 +8,7 @@ Ext.define('FriendlyRent.view.search.favorites.Content', {
     itemId: 'favorites_list',
     loadingText: 'Loading favorites...',
     emptyText: '<div class="favorites-list empty-text">No favorites found.</div>',
-    itemTpl: Ext.XTemplate.from("property", new PropertyHelper),
-    onItemDisclosure: function(record, btn, index) {
-      return console.log('Disclose Favorite', record, index);
-    }
+    itemTpl: Ext.XTemplate.from("property", new PropertyHelper)
   },
   initialize: function() {
     console.log('initialize');
@@ -19,6 +16,7 @@ Ext.define('FriendlyRent.view.search.favorites.Content', {
     return Ext.Function.defer(this.setFavorites, 200);
   },
   setFavorites: function() {
+    $('#favorites_navBtn').addClass('active-icon');
     return $('.favorite-stars').rateit({
       max: 3
     });

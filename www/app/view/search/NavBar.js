@@ -15,6 +15,8 @@ Ext.define('FriendlyRent.view.search.NavBar', {
         text: 'favorites',
         iconCls: 'favorites',
         action: 'favorites',
+        id: 'favorites_navBtn',
+        itemId: 'favoritesBtn',
         iconMask: true
       }, {
         text: 'agents',

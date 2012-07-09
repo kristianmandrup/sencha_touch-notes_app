@@ -4,7 +4,6 @@ Ext.define('FriendlyRent.TopBar', {
   alias: 'widget.topbar',
   config: {
     docked: 'top',
-    ui: 'gray',
     layout: {
       pack: 'center'
     }

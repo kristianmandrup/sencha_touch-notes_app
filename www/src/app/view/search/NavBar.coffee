@@ -16,6 +16,9 @@ Ext.define  'FriendlyRent.view.search.NavBar'
         text:     'favorites' # I18n.t('favorites')
         iconCls:  'favorites'
         action:   'favorites'
+        id:       'favorites_navBtn'
+        itemId:   'favoritesBtn'
+        # disabled: true
         iconMask: true
       }
       {
