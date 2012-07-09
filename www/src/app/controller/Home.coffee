@@ -19,6 +19,13 @@ Ext.define  'FriendlyRent.controller.Home'
         tap: 'onSelectDanishLang'
       englishButton:
         tap: 'onSelectEnglishLang'
+
+  loadStores: ->
+    console.log 'load stores'
+  launch: ->
+    this.callParent arguments
+    # this.loadStores        
+
   onTapSearch: ->
     console.log 'Go to Favorites'
     # search_page = Ext.create 'FriendlyRent.view.search.Page'

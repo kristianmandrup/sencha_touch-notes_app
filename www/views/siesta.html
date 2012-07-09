@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Ext JS library CSS-->
+    <link rel="stylesheet" type="text/css" href="sdk/resources/css/sencha-touch.css">    
+    <!-- Siesta CSS -->
+    <link rel="stylesheet" type="text/css" href="lib/siesta-1.1.0/resources/css/siesta-touch-all.css">
+  </head>
+  <body>
+    <div id="splashLoader">
+      <div id="loading">
+        <span class="loadTxt">Loading...</span>
+        <div class="x-loading-spinner"><span class="x-loading-top"></span><span class="x-loading-right"></span><span class="x-loading-bottom"></span><span class="x-loading-left"></span></div>
+      </div>
+    </div>
+
+    <%= templates %>
+
+    <!-- Sencha IO library -->
+    <script type="text/javascript" src="sdk/sencha-io-0.3.3/lib/sencha.io.js"></script>
+
+    <!-- Sencha Touch 2 library -->
+    <script type="text/javascript" src="sdk/sencha-touch-all-debug.js"></script>
+
+    <!-- JQuery plugins -->
+    <% ['jquery-1.7.2', 'jquery.rest'].each do |script| %>
+        <%= "<script type='text/javascript' src='lib/jquery/#{script}.js'></script>" %>
+    <% end %>
+
+    <!-- I18n -->
+    <script type="text/javascript" src="lib/i18n/i18n.js"></script>    
+
+    <!-- Plugins -->
+    <% ['NavBar', 'TopBar', 'SliderFieldInput', 'SliderFieldText'].each do |plugin| %>
+        <%= "<script type='text/javascript' src='lib/plugins/#{plugin}.js'></script>" %>
+    <% end %>
+        
+    <!-- Siesta application -->
+    <script type="text/javascript" src="lib/siesta-1.1.0/siesta-touch-all.js"></script>
+
+    <!-- The test harness -->
+    <script type="text/javascript" src="test/siesta_harness.js"></script>
+  </body>
+</html>

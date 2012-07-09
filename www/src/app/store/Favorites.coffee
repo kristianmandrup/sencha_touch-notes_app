@@ -9,42 +9,57 @@ Ext.define  'FriendlyRent.store.Favorites'
     data : [
         {
           dateCreated:  '5/7/2012'
-          title:    'Nice place'
-          location: 'Copenhagen'
-          type: 'apartment'
-          furnished: 'fully'
-          cost: '2500'
-          image: 'prop1.jpg'
-          rooms: 2
-          # period:
-          #   start_date: '1/8/2012'
-          #   end_date:   '1/9/2012'          
+          title:        'Nice place'
+          city:         'Frederiksberg'
+          region:       'Copenhagen'
+          countryCode:  'DK'
+          type:         'villa'
+          furnished:    true
+          cost:         '12500'
+          image:        'prop1.jpg'
+          size:         120
+          floor:        0
+          rooms:        4
+          bedrooms:     3
+          period:
+            start_date: '1/8/2012'
+            end_date:   '1/9/2012'          
         }
         {
           dateCreated:  '12/6/2012'
           title:        'Cool house'
-          location:     'Nørrebro'
-          type: 'house'
-          furnished: 'not'
-          cost: '3200'
-          image: 'prop2.jpg'
-          rooms: 3          
-          # period:
-          #   start_date: '1/8/2012'
-          #   end_date:   '1/10/2012'
+          city:         'Nørrebro'
+          region:       'Copenhagen'
+          countryCode:  'DK'
+          type:         'apartment'
+          furnished:    false
+          cost:         '7600'
+          image:        'prop2.jpg'
+          size:         84
+          floor:        1
+          rooms:        3
+          bedrooms:     2         
+          period:
+            start_date: '1/8/2012'
+            end_date:   '1/10/2012'
         }
         {
           dateCreated:  '3/6/2012'
-          title:    'Nice crib'
-          location: 'Vesterbro'
-          type: 'house'
-          furnished: 'fully'
-          cost: '4000'
-          image: 'prop3.jpg'
-          rooms: 4
-          # period:
-          #   start_date: '1/8/2012'
-          #   end_date:   '1/10/2012'
+          title:        'Nice crib'
+          city:         'Vesterbro'
+          region:       'Copenhagen'
+          countryCode:  'DK'
+          type:         'house'
+          furnished:    '1/2'
+          cost:         '10200'
+          image:        'prop3.jpg'
+          size:         100
+          floor:        2
+          rooms:        4
+          bedrooms:     2
+          period:
+            start_date: '1/8/2012'
+            end_date:   '1/10/2012'
         }
     ]
     proxy:

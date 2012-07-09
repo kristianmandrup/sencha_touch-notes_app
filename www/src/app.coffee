@@ -7,13 +7,6 @@ Ext.Loader.setPath
   # 'Share':    'modules/Share'
   # 'Photos':   'modules/Photos'
 
-# watchTemplates(
-#   bundle:
-#     className:  'FriendlyRent.Templates',
-#     fileName:   'lib/Templates.js'
-#   templatesPath: 'templates'
-# )
-
 Ext.application
   name: 'FriendlyRent'
   requires: [    
@@ -42,6 +35,7 @@ Ext.application
   views: [
     "FriendlyRent.view.home.Page"
     "FriendlyRent.view.search.Page"
+    "FriendlyRent.view.search.favorites.Page"
   ]
 
   icon:
@@ -77,7 +71,8 @@ Ext.application
 
   launch: ->
     console.log 'launch'
-    home_page = Ext.create 'FriendlyRent.view.home.Page'    
+    home_page = Ext.create 'FriendlyRent.view.search.favorites.Page'    
+    # home_page = Ext.create 'FriendlyRent.view.home.Page'    
     Ext.Viewport.add home_page
 
   onUpdated: ->

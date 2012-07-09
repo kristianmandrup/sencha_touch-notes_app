@@ -45,6 +45,15 @@
             "path": "lib/jquery/jquery.rest.js"
         },
         {
+            "path": "lib/jquery/rateit/jquery.rateit.min.js"
+        },
+        {
+            "path": "lib/Mixin.js"
+        },
+        {
+            "path": "lib/templates/Helpers.js"
+        },
+        {
             "path": "lib/i18n/i18n.js"
         },
         // Sencha plugins
@@ -60,21 +69,6 @@
         {
             "path": "lib/plugins/SliderFieldText.js"
         },
-        {
-            "path": "test/siesta_harness.js"
-        },
-        // {
-        //     "path": "lib/deftjs/deft.js" // or deft-debug.js
-        // },
-        // {
-        //     "path": "lib/jasmine/jasmine.js"
-        // },
-        // {
-        //     "path": "lib/jasmine/jasmine-html.js"
-        // },
-        // {
-        //     "path": "lib/jasmine/jasmine.console_reporter.js"
-        // },            
         {
             "path": "app.js",
             "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
@@ -96,9 +90,9 @@
      *      }
      */
     "css": [
-        // {
-        //     "path": "lib/jasmine/jasmine.css"
-        // },
+        {
+            "path": "lib/jquery/rateit/rateit.css"
+        },
         {
             "path": "resources/css/app.css",
             "update": "delta"

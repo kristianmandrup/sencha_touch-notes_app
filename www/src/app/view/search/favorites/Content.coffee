@@ -14,12 +14,14 @@ Ext.define  'FriendlyRent.view.search.favorites.Content'
       # Ext.XTemplate.from("property", helperFunctions
     itemTpl:      Ext.XTemplate.from(
       "property"
-      typeDesc: (item) ->
-        "#{item.rooms} room #{item.type}, #{item.furnished} furnished"
-      costDesc: (cost) ->
-        "#{cost} DKK"
-      periodDesc: (period) ->
-        if period then "#{period.start_date} to #{period.end_date}" else ""
+      new PropertyHelper
     )
     onItemDisclosure: (record, btn, index) ->
       console.log('Disclose Favorite', record, index)
+  initialize: ->
+    console.log 'initialize'
+    this.callParent()
+    Ext.Function.defer this.setFavorites, 200
+  setFavorites: ->
+    $('.favorite-stars').rateit
+      max: 3

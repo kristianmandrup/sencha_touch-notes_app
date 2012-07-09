@@ -8,23 +8,19 @@ Ext.define('FriendlyRent.view.search.favorites.Content', {
     itemId: 'favorites_list',
     loadingText: 'Loading favorites...',
     emptyText: '<div class="favorites-list empty-text">No favorites found.</div>',
-    itemTpl: Ext.XTemplate.from("property", {
-      typeDesc: function(item) {
-        return "" + item.rooms + " room " + item.type + ", " + item.furnished + " furnished";
-      },
-      costDesc: function(cost) {
-        return "" + cost + " DKK";
-      },
-      periodDesc: function(period) {
-        if (period) {
-          return "" + period.start_date + " to " + period.end_date;
-        } else {
-          return "";
-        }
-      }
-    }),
+    itemTpl: Ext.XTemplate.from("property", new PropertyHelper),
     onItemDisclosure: function(record, btn, index) {
       return console.log('Disclose Favorite', record, index);
     }
+  },
+  initialize: function() {
+    console.log('initialize');
+    this.callParent();
+    return Ext.Function.defer(this.setFavorites, 200);
+  },
+  setFavorites: function() {
+    return $('.favorite-stars').rateit({
+      max: 3
+    });
   }
 });

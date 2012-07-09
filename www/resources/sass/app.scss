@@ -1,5 +1,11 @@
 // $base-color: #ff6200;
-$base-gradien: 'glossy';
+$base-gradient: 'glossy';
+
+// $active-color: darken(saturate($base-color, 55%), 90%);
+// $alert-color:#54E344;
+// $button-radius:0;
+// $list-active-color:#E34457;
+// $list-pressed-color:#4457E3;
 
 @import 'sencha-touch/default/all';
 
@@ -21,10 +27,8 @@ $base-gradien: 'glossy';
 @include sencha-form;
 @include sencha-msgbox;
 
-// @include sencha-toolbar-ui('charcoal', #333);
-// @include sencha-toolbar-ui('gray', #222, 'bevel', #d40e3f);
-
-// Your custom code goes here..
+@include sencha-toolbar-ui('charcoal', #333);
+@include sencha-toolbar-ui('gray', gray);
 
 // How-to-make-toolbar-buttons-appear-like-the-tab-bar-icons
 // using-TabPanel-button-icons-in-a-Toolbar
@@ -40,18 +44,42 @@ $base-gradien: 'glossy';
   }
 }
 
+$basic-background: #eee;
+
+#home_page {
+  // lighten($basic-background, 20%);
+  background-color: #eee; 
+}
+
 .property-image {
   float: left;
-  width: 140px;
-  height: 100px;
+  height: 120px;
+  width: 160px;  
+  padding-right: 10px;
+}
+
+.x-list-container:nth-child(odd) {
+  background-color: #ccc;
 }
 
 .property-content {
-  padding-left: 20px;
+  padding-left: 10px;
   float: left;
 
   .title {
     font-weight: bold;
+    font-size: 16px;
+  }
+
+  .cost {
+    @include single-text-shadow;
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .data {
+    font-size: 14px;
   }
 }
 

@@ -24,6 +24,12 @@ Ext.define('FriendlyRent.controller.Home', {
       }
     }
   },
+  loadStores: function() {
+    return console.log('load stores');
+  },
+  launch: function() {
+    return this.callParent(arguments);
+  },
   onTapSearch: function() {
     var favorites_page;
     console.log('Go to Favorites');

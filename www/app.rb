@@ -36,3 +36,7 @@ end
 get "/" do
   erb :index
 end
+
+get "/siesta" do
+  erb :siesta
+end

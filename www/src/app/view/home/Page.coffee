@@ -8,7 +8,8 @@ Ext.define  'FriendlyRent.view.home.Page'
   ]
   config:
     layout: 'vbox'
-    style:  'background-color: #c8a0f0'
+    itemId: 'home'
+    id:     'home_page'
     items: [
       {
           html: '<img src="resources/images/login.png"/>'
