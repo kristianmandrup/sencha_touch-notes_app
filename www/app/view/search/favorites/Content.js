@@ -8,10 +8,9 @@ Ext.define('FriendlyRent.view.search.favorites.Content', {
     itemId: 'favorites_list',
     loadingText: 'Loading favorites...',
     emptyText: '<div class="favorites-list empty-text">No favorites found.</div>',
-    itemTpl: Ext.XTemplate.from("property", new PropertyHelper)
+    itemTpl: Ext.XTemplater.getRegisteredTemplate('favorite')
   },
   initialize: function() {
-    console.log('initialize');
     this.callParent();
     return Ext.Function.defer(this.setFavorites, 200);
   },

@@ -1,6 +1,6 @@
-Ext.define  'FriendlyRent.view.settings.TopBar'
+Ext.define  'FriendlyRent.view.property.TopBar'
   extend:   'FriendlyRent.TopBar'
-  alias:    'widget.settings_topbar'
+  alias:    'widget.property_topbar'
   config:
     items: [
       {

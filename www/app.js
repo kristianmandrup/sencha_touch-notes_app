@@ -12,7 +12,7 @@ Ext.application({
   models: [],
   stores: ["Favorites", "Agents"],
   controllers: ["FriendlyRent.controller.Home", "FriendlyRent.controller.Search"],
-  views: ["FriendlyRent.view.home.Page", "FriendlyRent.view.search.Page", "FriendlyRent.view.search.favorites.Page"],
+  views: ["FriendlyRent.view.home.Page"],
   icon: {
     '57': 'resources/icons/Icon.png',
     '72': 'resources/icons/Icon~ipad.png',
@@ -37,10 +37,13 @@ Ext.application({
       manualLogin: true
     }
   },
+  initialize: function() {
+    return console.log('initialize app');
+  },
   launch: function() {
     var home_page;
-    console.log('launch');
-    home_page = Ext.create('FriendlyRent.view.search.favorites.Page');
+    console.log('launch app');
+    home_page = Ext.create('FriendlyRent.view.home.Page');
     return Ext.Viewport.add(home_page);
   },
   onUpdated: function() {

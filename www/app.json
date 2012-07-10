@@ -39,6 +39,12 @@
             "path": "sdk/sencha-touch-debug.js"
         },
         {
+            "path": "lib/Underscore.js"
+        },
+        {
+            "path": "lib/Underscore.string.js"
+        },
+        {
             "path": "lib/jquery/jquery-1.7.2.js"
         },
         {
@@ -57,6 +63,9 @@
             "path": "lib/i18n/i18n.js"
         },
         // Sencha plugins
+        {
+            "path": "lib/plugins/XTemplater.js"
+        },
         {
             "path": "lib/plugins/NavBar.js"
         },

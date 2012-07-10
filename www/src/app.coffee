@@ -34,8 +34,8 @@ Ext.application
 
   views: [
     "FriendlyRent.view.home.Page"
-    "FriendlyRent.view.search.Page"
-    "FriendlyRent.view.search.favorites.Page"
+    # "FriendlyRent.view.search.Page"
+    # "FriendlyRent.view.search.favorites.Page"
   ]
 
   icon:
@@ -69,10 +69,13 @@ Ext.application
       # If you don't want to automatically trigger the login panel when your application starts then set manualLogin to true
       manualLogin: true
 
+  initialize: ->
+    console.log 'initialize app'    
+
   launch: ->
-    console.log 'launch'
-    home_page = Ext.create 'FriendlyRent.view.search.favorites.Page'    
-    # home_page = Ext.create 'FriendlyRent.view.home.Page'    
+    console.log 'launch app'
+    # home_page = Ext.create 'FriendlyRent.view.search.favorites.Page'    
+    home_page = Ext.create 'FriendlyRent.view.home.Page'    
     Ext.Viewport.add home_page
 
   onUpdated: ->

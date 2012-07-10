@@ -1,4 +1,6 @@
 // $base-color: #ff6200;
+
+// Options: ‘matte’, ‘bevel’, ‘glossy’, ‘recessed’, and ‘flat’
 $base-gradient: 'glossy';
 
 $fr_orange: #ff6200;
@@ -41,6 +43,9 @@ $fr_purple: #8e40c7;
 @include sencha-button-ui('purple', $fr_purple, 'glossy');
 @include sencha-button-ui('dp', #341050, 'glossy');
 
+// @include sencha-button-ui('yellow', #FEB729, 'glossy');
+// @include sencha-toolbar-ui('aqua', #6D98AB, 'glossy');
+
 @mixin custom-iconmask($name) {
   .x-tab img.#{$name}, .x-button img.x-icon-mask.#{$name} {
     -webkit-mask-image: inline-image('button_icons/' + $name + '.png');
@@ -74,6 +79,21 @@ $light-orange: #ff9900;
 .x-list-item {
   @include background-image(linear-gradient(#ccc, #fff));
   // background: #ddd; // lighten($fr_purple, 30%)
+}
+
+h2 {
+  color: white;
+  font-size: 16px;
+}
+
+.property.costs {
+  .label {
+    float: left;
+  }
+
+  .cost {
+    float: right;
+  }
 }
 
 .property-content {
