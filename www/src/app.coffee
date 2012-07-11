@@ -2,7 +2,7 @@ Ext.Loader.setPath
   'Ext.io':   'sdk/sencha-io-0.3.3/src/io'
   'Ext.cf':   'sdk/sencha-io-0.3.3/src/cf'
   'Ext':      'sdk/src'
-  'Ux' :      'lib/Ux'
+  'Ux' :      'lib/ux'
   # 'PathMenu': 'modules/PathMenu'
   # 'Share':    'modules/Share'
   # 'Photos':   'modules/Photos'
@@ -33,6 +33,11 @@ Ext.application
   ]
 
   views: [
+    "FriendlyRent.view.plugin.NavBar"
+    "FriendlyRent.view.plugin.TopBar"
+    # "FriendlyRent.view.plugin.RangeSlider"
+    # "FriendlyRent.view.plugin.TooltipSlider"
+
     "FriendlyRent.view.home.Page"
     # "FriendlyRent.view.search.Page"
     # "FriendlyRent.view.search.favorites.Page"

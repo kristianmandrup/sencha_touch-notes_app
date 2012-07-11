@@ -57,27 +57,9 @@
             "path": "lib/Mixin.js"
         },
         {
-            "path": "lib/templates/Helpers.js"
-        },
-        {
             "path": "lib/i18n/i18n.js"
         },
         // Sencha plugins
-        {
-            "path": "lib/plugins/XTemplater.js"
-        },
-        {
-            "path": "lib/plugins/NavBar.js"
-        },
-        {
-            "path": "lib/plugins/TopBar.js"
-        },
-        {
-            "path": "lib/plugins/SliderFieldInput.js"
-        },
-        {
-            "path": "lib/plugins/SliderFieldText.js"
-        },
         {
             "path": "app.js",
             "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
@@ -101,6 +83,9 @@
     "css": [
         {
             "path": "lib/jquery/rateit/rateit.css"
+        },
+        {
+            "path": "resources/css/social_icons_aqua.css"
         },
         {
             "path": "resources/css/app.css",

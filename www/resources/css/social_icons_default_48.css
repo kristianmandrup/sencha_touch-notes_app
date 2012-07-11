@@ -1,0 +1,34 @@
+.s48.social_sprites {
+  background: url(resources/images/icons/social/social_icons_48.png) no-repeat top left;
+}
+
+.s48.social.sprite-Google{ background-position: 0 0; width: 48px; height: 48px; } 
+.s48.social.sprite-blogger{ background-position: 0 -98px; width: 48px; height: 48px; } 
+.s48.social.sprite-delicious{ background-position: 0 -196px; width: 48px; height: 48px; } 
+.s48.social.sprite-digg{ background-position: 0 -294px; width: 48px; height: 48px; } 
+.s48.social.sprite-ebay{ background-position: 0 -392px; width: 48px; height: 48px; } 
+.s48.social.sprite-facebook{ background-position: 0 -490px; width: 48px; height: 48px; } 
+.s48.social.sprite-feed{ background-position: 0 -588px; width: 48px; height: 48px; } 
+.s48.social.sprite-flickr{ background-position: 0 -686px; width: 48px; height: 48px; } 
+.s48.social.sprite-friendfeed{ background-position: 0 -784px; width: 48px; height: 48px; } 
+.s48.social.sprite-friendster{ background-position: 0 -882px; width: 48px; height: 48px; } 
+.s48.social.sprite-furl{ background-position: 0 -980px; width: 48px; height: 48px; } 
+.s48.social.sprite-lastfm{ background-position: 0 -1078px; width: 48px; height: 48px; } 
+.s48.social.sprite-linkedin{ background-position: 0 -1176px; width: 48px; height: 48px; } 
+.s48.social.sprite-livejournal{ background-position: 0 -1274px; width: 48px; height: 48px; } 
+.s48.social.sprite-magnolia{ background-position: 0 -1372px; width: 48px; height: 48px; } 
+.s48.social.sprite-mixx{ background-position: 0 -1470px; width: 48px; height: 48px; } 
+.s48.social.sprite-myspace{ background-position: 0 -1568px; width: 48px; height: 48px; } 
+.s48.social.sprite-netvibes{ background-position: 0 -1666px; width: 48px; height: 48px; } 
+.s48.social.sprite-newsvine{ background-position: 0 -1764px; width: 48px; height: 48px; } 
+.s48.social.sprite-picasa{ background-position: 0 -1862px; width: 48px; height: 48px; } 
+.s48.social.sprite-pownce{ background-position: -98px 0; width: 48px; height: 48px; } 
+.s48.social.sprite-reddit{ background-position: -98px -98px; width: 48px; height: 48px; } 
+.s48.social.sprite-stumbleupon{ background-position: -98px -196px; width: 48px; height: 48px; } 
+.s48.social.sprite-technorati{ background-position: -98px -294px; width: 48px; height: 48px; } 
+.s48.social.sprite-twitter{ background-position: -98px -392px; width: 48px; height: 48px; } 
+.s48.social.sprite-vimeo{ background-position: -98px -490px; width: 48px; height: 48px; } 
+.s48.social.sprite-webshots{ background-position: -98px -588px; width: 48px; height: 48px; } 
+.s48.social.sprite-wordpress{ background-position: -98px -686px; width: 48px; height: 48px; } 
+.s48.social.sprite-yelp{ background-position: -98px -784px; width: 48px; height: 48px; } 
+.s48.social.sprite-youtube{ background-position: -98px -882px; width: 48px; height: 48px; } 

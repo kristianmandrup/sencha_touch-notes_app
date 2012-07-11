@@ -12,3 +12,9 @@ class Mixin
 
   # Implement in your mixin to act as a constructor for mixed-in properties
   setup: ->
+
+module = (name) ->
+  global[name] = global[name] or {}
+
+# mixin of Underscore.string
+_.mixin _.string.exports()

@@ -1,4 +1,4 @@
-var Mixin,
+var Mixin, module,
   __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 Mixin = (function() {
@@ -40,3 +40,9 @@ Mixin = (function() {
   return Mixin;
 
 })();
+
+module = function(name) {
+  return global[name] = global[name] || {};
+};
+
+_.mixin(_.string.exports());

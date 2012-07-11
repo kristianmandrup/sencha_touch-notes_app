@@ -3,7 +3,7 @@ Ext.Loader.setPath({
   'Ext.io': 'sdk/sencha-io-0.3.3/src/io',
   'Ext.cf': 'sdk/sencha-io-0.3.3/src/cf',
   'Ext': 'sdk/src',
-  'Ux': 'lib/Ux'
+  'Ux': 'lib/ux'
 });
 
 Ext.application({
@@ -12,7 +12,7 @@ Ext.application({
   models: [],
   stores: ["Favorites", "Agents"],
   controllers: ["FriendlyRent.controller.Home", "FriendlyRent.controller.Search"],
-  views: ["FriendlyRent.view.home.Page"],
+  views: ["FriendlyRent.view.plugin.NavBar", "FriendlyRent.view.plugin.TopBar", "FriendlyRent.view.home.Page"],
   icon: {
     '57': 'resources/icons/Icon.png',
     '72': 'resources/icons/Icon~ipad.png',

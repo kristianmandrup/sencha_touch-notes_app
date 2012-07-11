@@ -1,6 +1,6 @@
 var __slice = [].slice;
 
-Ext.define('Ext.XTemplater', {
+Ext.define('Ux.util.XTemplater', {
   extend: 'Ext.XTemplate',
   statics: {
     propertyTplFor: function(name, configName) {

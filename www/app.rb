@@ -23,9 +23,11 @@ end
 
 helpers do
   def templates
-    Dir.glob("templates/**").map do |template|
-      name = File.basename(template, ".html")
-      content = open(template).read
+    Dir.glob("templates/**/*.html").map do |template|
+      dirname = File.dirname(template).gsub(/\//, '_').sub(/^templates_/, '')
+      basename = File.basename template, ".html"
+      name = [dirname, basename].join('_')
+      content = File.open(template).read
       "<textarea id='#{name}' class='x-hidden-display'>#{content}</textarea>"
     end.join("\n")
   end

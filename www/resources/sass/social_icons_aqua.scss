@@ -1,0 +1,93 @@
+.s64.aqua {
+  .ss {
+    background: url(/resources/images/icons/social/social_icons_aqua_64.png) no-repeat top left;
+  }
+
+  .facebook{ background-position: 0 0; width: 64px; height: 64px; } 
+  .feed{ background-position: 0 -114px; width: 64px; height: 64px; } 
+  .google{ background-position: 0 -228px; width: 64px; height: 64px; } 
+  .twitter{ background-position: 0 -342px; width: 64px; height: 64px; } 
+  .vimeo{ background-position: 0 -456px; width: 64px; height: 64px; } 
+  .youtube{ background-position: 0 -570px; width: 64px; height: 64px; } 
+}
+
+.s32.aqua {
+  .ss {
+    background: url(/resources/images/icons/social/social_icons_aqua_32.png) no-repeat top left;
+  }
+
+  .facebook{ background-position: 0 0; width: 32px; height: 32px; } 
+  .feed{ background-position: 0 -82px; width: 32px; height: 32px; } 
+  .google{ background-position: 0 -164px; width: 32px; height: 32px; } 
+  .twitter{ background-position: 0 -246px; width: 32px; height: 32px; } 
+  .vimeo{ background-position: 0 -328px; width: 32px; height: 32px; } 
+  .youtube{ background-position: 0 -410px; width: 32px; height: 32px; } 
+}
+
+.s24.aqua {
+  .ss {
+    background: url(/resources/images/icons/social/social_icons_aqua_24.png) no-repeat top left;
+  }
+
+  .facebook{ background-position: 0 0; width: 24px; height: 24px; } 
+  .feed{ background-position: 0 -28px; width: 24px; height: 24px; } 
+  .google{ background-position: 0 -56px; width: 24px; height: 24px; } 
+  .twitter{ background-position: 0 -84px; width: 24px; height: 24px; } 
+  .vimeo{ background-position: 0 -112px; width: 24px; height: 24px; } 
+  .youtube{ background-position: 0 -140px; width: 24px; height: 24px; } 
+}
+
+.s16.aqua {
+  .ss {
+    background: url(/resources/images/icons/social/social_icons_aqua_16.png) no-repeat top left;
+  }
+
+  .facebook{ background-position: 0 0; width: 16px; height: 16px; } 
+  .feed{ background-position: 0 -20px; width: 16px; height: 16px; } 
+  .google{ background-position: 0 -40px; width: 16px; height: 16px; } 
+  .twitter{ background-position: 0 -60px; width: 16px; height: 16px; } 
+  .vimeo{ background-position: 0 -80px; width: 16px; height: 16px; } 
+  .youtube{ background-position: 0 -100px; width: 16px; height: 16px; } 
+}
+
+ul.social_sprites {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+ul.social_sprites.l {
+  li {
+    float: left;
+  }    
+}
+
+.social_sprites.border {
+  li.ss {
+    border: 1px solid black;
+  }
+}
+
+.s16.social_sprites {
+  li.ss {
+    line-height: 16px;
+  }
+}
+
+.s24.social_sprites {
+  li.ss {
+    line-height: 24px;
+  }
+}
+
+.s32.social_sprites {
+  li.ss {
+    line-height: 32px; 
+  }
+}
+
+.s64.social_sprites {
+  li.ss {
+    line-height: 64px; 
+  }
+}

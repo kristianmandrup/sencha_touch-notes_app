@@ -12,7 +12,7 @@ Ext.define  'FriendlyRent.view.search.favorites.Content'
     loadingText:  'Loading favorites...'
     emptyText:    '<div class="favorites-list empty-text">No favorites found.</div>'
       # Ext.XTemplate.from("property", helperFunctions
-    itemTpl:      Ext.XTemplater.getRegisteredTemplate('favorite')
+    itemTpl:      Ext.XTemplater.getTemplate('property_favorite')
     # onItemDisclosure: (record, btn, index) ->
       # console.log('Disclose Favorite', record, index)
   initialize: ->
